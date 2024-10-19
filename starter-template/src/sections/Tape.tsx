@@ -1,20 +1,24 @@
 import StarIcon from '@/assets/icons/star.svg';
 import { Fragment } from 'react';
-const words = [
-	'Performant',
-	'Accessible',
-	'Secure',
-	'Interactive',
-	'Scalable',
-	'User Friendly',
-	'Responsive',
-	'Maintenable',
-	'Search Optimisation',
-	'Usable',
-	'Reliable',
-];
+import { useTranslations } from 'next-intl';
 
 export const TapeSection = () => {
+	const t = useTranslations('tape.words');
+
+	const words = [
+		t('word1'),
+		t('word2'),
+		t('word3'),
+		t('word4'),
+		t('word5'),
+		t('word6'),
+		t('word7'),
+		t('word8'),
+		t('word9'),
+		t('word10'),
+		t('word11'),
+	];
+
 	return (
 		<div className='py-16 lg:py-24 overflow-x-clip'>
 			<div className='bg-gradient-to-r from-emerald-300 to-sky-400 -rotate-3 -mx-1'>

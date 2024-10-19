@@ -1,13 +1,10 @@
 'use client';
 
-import { useState } from 'react';
+import { useTranslations } from 'next-intl';
+import { LanguageSwitcher } from '../components/LanguageSwitcher';
 
 export const Header = () => {
-	const [language, setLanguage] = useState('FR');
-
-	const toggleLanguage = () => {
-		setLanguage((prevLanguage) => (prevLanguage === 'FR' ? 'EN' : 'FR'));
-	};
+	const t = useTranslations('header');
 
 	return (
 		<div className='flex justify-center items-center fixed top-3 w-full z-10'>
@@ -16,38 +13,27 @@ export const Header = () => {
 					href='#'
 					className='nav-item px-4 py-2 rounded-full text-white transition-colors duration-200 hover:bg-white hover:text-gray-900'
 				>
-					Home
+					{t('home')}
 				</a>
 				<a
 					href='#'
 					className='nav-item px-4 py-2 rounded-full text-white transition-colors duration-200 hover:bg-white hover:text-gray-900'
 				>
-					Projects
+					{t('projects')}
 				</a>
 				<a
 					href='#'
 					className='nav-item px-4 py-2 rounded-full text-white transition-colors duration-200 hover:bg-white hover:text-gray-900'
 				>
-					About
+					{t('about')}
 				</a>
 				<a
 					href='#'
 					className='nav-item px-4 py-2 rounded-full text-white transition-colors duration-200 hover:bg-white hover:text-gray-900'
 				>
-					Contact
+					{t('contact')}
 				</a>
-				<button
-					onClick={toggleLanguage}
-					aria-label='Changer la langue'
-					className='
-            nav-item
-            px-4 py-2 rounded-full text-white transition-colors duration-200 hover:bg-white hover:text-gray-900
-            absolute right-0 -bottom-12 mr-4
-            md:static md:ml-auto md:w-10 md:h-10 md:flex md:items-center md:justify-center
-          '
-				>
-					{language}
-				</button>
+				<LanguageSwitcher />
 			</nav>
 		</div>
 	);

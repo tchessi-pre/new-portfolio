@@ -1,62 +1,68 @@
-import memojiAvatar1 from "@/assets/images/memoji-avatar-1.png";
-import memojiAvatar2 from "@/assets/images/memoji-avatar-2.png";
-import memojiAvatar3 from "@/assets/images/memoji-avatar-3.png";
-import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
-import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
-import Image from 'next/image';
+'use client';
+
 import { SectionHeader } from '../components/SectionHeader';
+import { useTranslations } from 'next-intl';
+import { Fragment } from 'react';
 import { Card } from '../components/Card';
-import grainImage from '@/assets/images/grain.jpg';
-import { Fragment } from "react";
+import Image from 'next/image';
+import memojiAvatar1 from '@/assets/images/memoji-avatar-1.png';
+import memojiAvatar2 from '@/assets/images/memoji-avatar-2.png';
+import memojiAvatar3 from '@/assets/images/memoji-avatar-3.png';
+import memojiAvatar4 from '@/assets/images/memoji-avatar-4.png';
+import memojiAvatar5 from '@/assets/images/memoji-avatar-5.png';
+
+const avatars = [
+	memojiAvatar1,
+	memojiAvatar2,
+	memojiAvatar3,
+	memojiAvatar4,
+	memojiAvatar5,
+];
 
 const testimonials = [
-  {
-    name: "Alex Turner",
-    position: "Marketing Manager @ TechStartups",
-    text: "Alex was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
-    avatar: memojiAvatar1,
-  },
-  {
-    name: "Olivia Green",
-    position: "Head of Design @ GreenLeaf",
-    text: "Working with Alex was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
-    avatar: memojiAvatar2,
-  },
-  {
-    name: "Daniel White",
-    position: "CEO @ InnovateCo",
-    text: "Alex's ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
-    avatar: memojiAvatar3,
-  },
-  {
-    name: "Emily Carter",
-    position: "Product Manager @ GlobalTech",
-    text: "Alex is a true frontend wizard. He took our complex product and transformed it into an intuitive and engaging user interface. We're already seeing positive feedback from our customers.",
-    avatar: memojiAvatar4,
-  },
-  {
-    name: "Michael Brown",
-    position: "Director of IT @ MegaCorp",
-    text: "Alex's work on our website has been nothing short of exceptional. He's a talented developer who is also a great communicator. We highly recommend him.",
-    avatar: memojiAvatar5,
-  },
+	{
+		name: 'John Doe',
+		position: 'Mentor @ WebAcademy',
+		text: 'Tchèssi has demonstrated exceptional growth during his time with us. His dedication to mastering both front-end and back-end technologies is commendable. He consistently delivered projects on time and exceeded expectations.',
+	},
+	{
+		name: 'Sarah Lee',
+		position: 'Lead Developer @ Digital Solutions',
+		text: 'Working with Tchèssi was a great experience. He was quick to learn and apply new concepts, and his problem-solving skills were invaluable to the team. His work on our internal tools greatly improved team productivity.',
+	},
+	{
+		name: 'David Brown',
+		position: 'Project Manager @ CodeWorks',
+		text: 'Tchèssi was a crucial part of our development team during his time with us. His ability to quickly understand complex projects and provide innovative solutions was highly appreciated.',
+	},
+	{
+		name: 'Emily Clark',
+		position: 'Instructor @ TechUniversity',
+		text: 'Tchèssi has been an outstanding student. His curiosity and passion for web development are remarkable. He always pushed the boundaries and took initiatives to learn beyond the curriculum.',
+	},
+	{
+		name: 'Michael Johnson',
+		position: 'CTO @ NextGen IT',
+		text: 'Tchèssi was a pleasure to have in the team. His adaptability and willingness to take on new challenges helped drive our projects forward. He would be an asset to any team.',
+	},
 ];
 
 export const TestimonialsSection = () => {
-  return (
+	const t = useTranslations('testimonials');
+
+	return (
 		<div className='py-16 lg:py-24'>
 			<div className='container'>
 				<SectionHeader
-					eyebrow='Happy Clients'
-					title='What Clients say about Me'
-					description='Don&rsquo;t just take my word for it. See what my clients have to say
-				about my work'
+					eyebrow={t('eyebrow')}
+					title={t('title')}
+					description={t('description')}
 				/>
 				<div className='mt-12 lg:mt-20 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] py-4 -my-4'>
 					<div className='flex gap-8 pr-8 flex-none animate-move-left [animation-duration:90s] hover:[animation-play-state:paused]'>
 						{[...new Array(2)].fill(0).map((_, index) => (
 							<Fragment key={index}>
-								{testimonials.map((testimonial) => (
+								{testimonials.map((testimonial, idx) => (
 									<Card
 										key={testimonial.name}
 										className='max-w-xs md:max-w-md p-6 md:p-8 hover:-rotate-3 transition duration-300'
@@ -64,7 +70,7 @@ export const TestimonialsSection = () => {
 										<div className='flex gap-4 items-center'>
 											<div className='size-14 bg-gray-700 inline-flex items-center justify-center rounded-full flex-shrink-0'>
 												<Image
-													src={testimonial.avatar}
+													src={avatars[idx]}
 													alt={testimonial.name}
 													className='max-h-full'
 												/>

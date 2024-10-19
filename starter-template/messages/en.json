@@ -1,0 +1,79 @@
+{
+	"header": {
+		"home": "Home",
+		"projects": "Projects",
+		"about": "About",
+		"contact": "Contact"
+	},
+	"hero": {
+		"title": "Building Exceptional User Experiences",
+		"subtitle": "I specialize in transforming designs into functional, high-performing web applications.",
+		"availableForProjects": "Available for new projects",
+		"exploreWork": "Explore My Work",
+		"letsConnect": "Let's Connect"
+	},
+	"projects": {
+		"sectionHeader": {
+			"eyebrow": "Real-world Results",
+			"title": "Featured Projects",
+			"description": "See how I transformed concepts into engaging digital experiences."
+		},
+		"visitLiveSite": "Visit live Site",
+		"results": {
+			"enhancedUserExperience": "Enhanced user experience by {percentage}%",
+			"improvedSiteSpeed": "Improved site speed by {percentage}%",
+			"increasedMobileTraffic": "Increased mobile traffic by {percentage}%",
+			"boostedSales": "Boosted sales by {percentage}%",
+			"expandedCustomerReach": "Expanded customer reach by {percentage}%",
+			"increasedBrandAwareness": "Increased brand awareness by {percentage}%"
+		}
+	},
+	"tape": {
+		"words": {
+			"word1": "Performant",
+			"word2": "Accessible",
+			"word3": "Secure",
+			"word4": "Interactive",
+			"word5": "Scalable",
+			"word6": "User Friendly",
+			"word7": "Responsive",
+			"word8": "Maintainable",
+			"word9": "Search Optimisation",
+			"word10": "Usable",
+			"word11": "Reliable"
+		}
+	},
+	"about": {
+		"eyebrow": "About Me",
+		"title": "A Glimpse Into My World",
+		"description": "Learn more about who I am, what I do, and what inspires me",
+		"myReadsTitle": "My Reads",
+		"myReadsDescription": "Explore the books shaping my perspectives.",
+		"myToolboxTitle": "My Toolbox",
+		"myToolboxDescription": "Explore the technologies and tools I use to craft exceptional digital experiences.",
+		"beyondCodeTitle": "Beyond the Code",
+		"beyondCodeDescription": "Explore my interests and hobbies beyond the digital realm.",
+		"hobbies": {
+			"painting": "Painting",
+			"photography": "Photography",
+			"hiking": "Hiking",
+			"gaming": "Gaming",
+			"music": "Music",
+			"fitness": "Fitness",
+			"reading": "Reading"
+		}
+	},
+	"contact": {
+		"heading": "Let’s create something amazing together",
+		"description": "Ready to bring your next project to life? Let’s connect and discuss how I can help you achieve your goals.",
+		"buttonText": "Contact Me"
+	},
+	"footer": {
+		"copyright": "2024. All rights reserved."
+	},
+	"testimonials": {
+		"eyebrow": "Satisfied Colleagues & Mentors",
+		"title": "What People Say About Me",
+		"description": "Here’s what some of my colleagues and mentors have to say about my work and performance during my studies and internship."
+	}
+}

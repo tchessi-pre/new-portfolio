@@ -1,0 +1,79 @@
+{
+	"header": {
+		"home": "Accueil",
+		"projects": "Projets",
+		"about": "À propos",
+		"contact": "Contact"
+	},
+	"hero": {
+		"title": "Créer des expériences utilisateur exceptionnelles",
+		"subtitle": "Je me spécialise dans la transformation de designs en applications web fonctionnelles et performantes.",
+		"availableForProjects": "Disponible pour de nouveaux projets",
+		"exploreWork": "Découvrez mon travail",
+		"letsConnect": "Restons en contact"
+	},
+	"projects": {
+		"sectionHeader": {
+			"eyebrow": "Résultats concrets",
+			"title": "Projets phares",
+			"description": "Découvrez comment j'ai transformé des concepts en expériences numériques engageantes."
+		},
+		"visitLiveSite": "Visitez le site en direct",
+		"results": {
+			"enhancedUserExperience": "Expérience utilisateur améliorée de {percentage}%",
+			"improvedSiteSpeed": "Vitesse du site améliorée de {percentage}%",
+			"increasedMobileTraffic": "Trafic mobile augmenté de {percentage}%",
+			"boostedSales": "Ventes augmentées de {percentage}%",
+			"expandedCustomerReach": "Portée client élargie de {percentage}%",
+			"increasedBrandAwareness": "Notoriété de la marque augmentée de {percentage}%"
+		}
+	},
+	"tape": {
+		"words": {
+			"word1": "Performant",
+			"word2": "Accessible",
+			"word3": "Sécurisé",
+			"word4": "Interactif",
+			"word5": "Scalable",
+			"word6": "Convivial",
+			"word7": "Responsive",
+			"word8": "Maintenable",
+			"word9": "Optimisation pour la recherche",
+			"word10": "Utilisable",
+			"word11": "Fiable"
+		}
+	},
+	"about": {
+		"eyebrow": "À propos de moi",
+		"title": "Un aperçu de mon univers",
+		"description": "En savoir plus sur qui je suis, ce que je fais et ce qui m'inspire",
+		"myReadsTitle": "Mes lectures",
+		"myReadsDescription": "Découvrez les livres qui façonnent ma vision du monde.",
+		"myToolboxTitle": "Ma boîte à outils",
+		"myToolboxDescription": "Découvrez les technologies et outils que j'utilise pour créer des expériences numériques exceptionnelles.",
+		"beyondCodeTitle": "Au-delà du code",
+		"beyondCodeDescription": "Découvrez mes centres d'intérêt et loisirs au-delà du monde numérique.",
+		"hobbies": {
+			"painting": "Peinture",
+			"photography": "Photographie",
+			"hiking": "Randonnée",
+			"gaming": "Jeux vidéo",
+			"music": "Musique",
+			"fitness": "Fitness",
+			"reading": "Lecture"
+		}
+	},
+	"contact": {
+		"heading": "Créons quelque chose d'incroyable ensemble",
+		"description": "Prêt à donner vie à votre prochain projet ? Connectons-nous et discutons de la manière dont je peux vous aider à atteindre vos objectifs.",
+		"buttonText": "Contactez-moi"
+	},
+	"footer": {
+		"copyright": "2024. Tous droits réservés."
+	},
+	"testimonials": {
+		"eyebrow": "Collègues et mentors satisfaits",
+		"title": "Ce que les gens disent de moi",
+		"description": "Voici ce que certains de mes collègues et mentors ont à dire sur mon travail et ma performance pendant mes études et mon alternance."
+	}
+}

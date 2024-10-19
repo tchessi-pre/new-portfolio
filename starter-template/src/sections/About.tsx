@@ -1,20 +1,32 @@
 'use client';
+
 import { Card } from '@/components/Card';
 import { SectionHeader } from '@/components/SectionHeader';
 import bookImage from '@/assets/images/book-cover.png';
 import mapImage from '@/assets/images/map.png';
 import Image from 'next/image';
+import smileMemoji from '@/assets/images/memoji-smile.png';
 import JavascriptIcon from '@/assets/icons/square-js.svg';
 import HTMLIcon from '@/assets/icons/html5.svg';
 import CssIcon from '@/assets/icons/css3.svg';
 import ReactIcon from '@/assets/icons/react.svg';
 import ChromeIcon from '@/assets/icons/chrome.svg';
 import GithubIcon from '@/assets/icons/github.svg';
-import smileMemoji from '@/assets/images/memoji-smile.png';
+import GoIcon from '@/assets/icons/go-svgrepo-com.svg';
+import DockerIcon from '@/assets/icons/docker-icon-svgrepo-com.svg';
+import NestJsIcon from '@/assets/icons/nestjs-svgrepo-com.svg';
+import NextJsIcon from '@/assets/icons/nextjs-icon-svgrepo-com.svg';
+import TailwindIcon from '@/assets/icons/tailwindcss-svgrepo-com.svg';
+import VueJsIcon from '@/assets/icons/vuejs-svgrepo-com.svg';
+import StrapiIcon from '@/assets/icons/strapi-svgrepo-com.svg';
+import MaterialUiIcon from '@/assets/icons/material-ui-svgrepo-com.svg';
+import KubernetesIcon from '@/assets/icons/kubernetes-svgrepo-com (1).svg';
+import AngularJsIcon from '@/assets/icons/angularjs-svgrepo-com.svg';
 import { CardHeader } from '@/components/CardHeader';
 import { ToolboxItems } from '@/components/ToolboxItems';
-import  { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
 import { useRef } from 'react';
+import { useTranslations } from 'next-intl';
 
 const toolboxItems = [
 	{
@@ -41,69 +53,113 @@ const toolboxItems = [
 		title: 'Github',
 		iconType: GithubIcon,
 	},
+	{
+		title: 'Golang',
+		iconType: GoIcon,
+	},
+	{
+		title: 'Docker',
+		iconType: DockerIcon,
+	},
+	{
+		title: 'NestJS',
+		iconType: NestJsIcon,
+	},
+	{
+		title: 'NextJS',
+		iconType: NextJsIcon,
+	},
+	{
+		title: 'Tailwind',
+		iconType: TailwindIcon,
+	},
+	{
+		title: 'VueJS',
+		iconType: VueJsIcon,
+	},
+	{
+		title: 'Strapi',
+		iconType: StrapiIcon,
+	},
+	{
+		title: 'Material UI',
+		iconType: MaterialUiIcon,
+	},
+	{
+		title: 'Kubernetes',
+		iconType: KubernetesIcon,
+	},
+	{
+		title: 'AngularJS',
+		iconType: AngularJsIcon,
+	},
 ];
 
-const hobbies = [
-	{
-		title: 'Painting',
-		emoji: '🎨',
-		left: '5%',
-		top: '5%',
-	},
-	{
-		title: 'Photography',
-		emoji: '📹',
-		left: '50%',
-		top: '5%',
-	},
-	{
-		title: 'Hiking',
-		emoji: '✌️',
-		left: '35%',
-		top: '40%',
-	},
-	{
-		title: 'Gaming',
-		emoji: '🎮',
-		left: '10%',
-		top: '35%',
-	},
-	{
-		title: 'Music',
-		emoji: '🎸',
-		left: '70%',
-		top: '45%',
-	},
-	{
-		title: 'Fitness',
-		emoji: '🏋️‍♀️',
-		left: '5%',
-		top: '65%',
-	},
-	{
-		title: 'Reading',
-		emoji: '📘',
-		left: '45%',
-		top: '70%',
-	},
-];
+
 export const AboutSection = () => {
+	const t = useTranslations('about'); 
 	const constraintRef = useRef(null);
+
+	const hobbies = [
+		{
+			title: t('hobbies.painting'),
+			emoji: '🎨',
+			left: '5%',
+			top: '5%',
+		},
+		{
+			title: t('hobbies.photography'),
+			emoji: '📹',
+			left: '50%',
+			top: '5%',
+		},
+		{
+			title: t('hobbies.hiking'),
+			emoji: '✌️',
+			left: '35%',
+			top: '40%',
+		},
+		{
+			title: t('hobbies.gaming'),
+			emoji: '🎮',
+			left: '10%',
+			top: '35%',
+		},
+		{
+			title: t('hobbies.music'),
+			emoji: '🎸',
+			left: '70%',
+			top: '45%',
+		},
+		{
+			title: t('hobbies.fitness'),
+			emoji: '🏋️‍♀️',
+			left: '5%',
+			top: '65%',
+		},
+		{
+			title: t('hobbies.reading'),
+			emoji: '📘',
+			left: '45%',
+			top: '70%',
+		},
+	];
+
 	return (
 		<div className='py-20 lg:py-28'>
 			<div className='container'>
 				<SectionHeader
-					eyebrow='About Me'
-					title='AGlimpse Into My Word'
-					description='Learn more about who I an, what I do, and what inspires me'
+					eyebrow={t('eyebrow')}
+					title={t('title')}
+					description={t('description')}
 				/>
 
 				<div className='mt-20 flex flex-col gap-8'>
 					<div className='grid grid-col-1 gap-8 md:grid md:grid-cols-5 lg:grid-cols-3 '>
 						<Card className='h-[320px] md:col-span-2 lg:col-span-1'>
 							<CardHeader
-								title='My Reads'
-								description='Explore the books shaping my perspectives.'
+								title={t('myReadsTitle')}
+								description={t('myReadsDescription')}
 							/>
 							<div className='w-40 mx-auto mt-2 md:mt-0'>
 								<Image src={bookImage} alt='Book cover' />
@@ -111,9 +167,8 @@ export const AboutSection = () => {
 						</Card>
 						<Card className='h-[320px] md:col-span-3 lg:col-span-2'>
 							<CardHeader
-								title='My Toolbox'
-								description='Explore the technologies and tools I use to craft exceptional
-								digital experiences.'
+								title={t('myToolboxTitle')}
+								description={t('myToolboxDescription')}
 								className=''
 							/>
 							<ToolboxItems
@@ -131,8 +186,8 @@ export const AboutSection = () => {
 					<div className='grid grid-col-1 md:grid-cols-5 lg:grid-cols-3 gap-8 '>
 						<Card className='h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2'>
 							<CardHeader
-								title='Beyond the Code'
-								description='Explore my interests and hobbies beyond the digital realm.'
+								title={t('beyondCodeTitle')}
+								description={t('beyondCodeDescription')}
 								className='px-6 pt-6'
 							/>
 							<div className='relative flex-1' ref={constraintRef}>
