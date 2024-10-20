@@ -27,8 +27,8 @@ export const LanguageSwitcher = () => {
 			className='
         nav-item
         px-4 py-2 rounded-full text-white transition-colors duration-200 hover:bg-white hover:text-gray-900
-        absolute right-0 -bottom-12 mr-4
-        md:static md:ml-auto md:w-10 md:h-10 md:flex md:items-center md:justify-center
+        absolute right-0 -bottom-12 
+        md:static md:ml-auto md:w-10 md:h-10 md:flex md:items-center md:justify-center  border border-white/15
       '
 		>
 			{language === 'fr' ? 'FR' : 'EN'}

@@ -6,6 +6,7 @@ import { TestimonialsSection } from '@/sections/Testimonials';
 import { AboutSection } from './../sections/About';
 import { ContactSection } from '@/sections/Contact';
 import { Footer } from '@/sections/Footer';
+import { ScrollToTopButton } from '@/components/ScrollToTopButton';
 
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
 			<AboutSection />
 			<ContactSection />
 			<Footer />
+			<ScrollToTopButton />
 		</div>
 	);
 }

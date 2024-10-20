@@ -54,7 +54,7 @@ export const ProjectsSection = () => {
 	const t = useTranslations('projects');
 
 	return (
-		<section className='pb-16 lg:py-24'>
+		<section className='pb-16 lg:py-24' id='projects'	>
 			<div className='container'>
 				<SectionHeader
 					eyebrow={t('sectionHeader.eyebrow')}

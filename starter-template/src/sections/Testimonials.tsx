@@ -19,36 +19,41 @@ const avatars = [
 	memojiAvatar5,
 ];
 
-const testimonials = [
-	{
-		name: 'John Doe',
-		position: 'Mentor @ WebAcademy',
-		text: 'Tchèssi has demonstrated exceptional growth during his time with us. His dedication to mastering both front-end and back-end technologies is commendable. He consistently delivered projects on time and exceeded expectations.',
-	},
-	{
-		name: 'Sarah Lee',
-		position: 'Lead Developer @ Digital Solutions',
-		text: 'Working with Tchèssi was a great experience. He was quick to learn and apply new concepts, and his problem-solving skills were invaluable to the team. His work on our internal tools greatly improved team productivity.',
-	},
-	{
-		name: 'David Brown',
-		position: 'Project Manager @ CodeWorks',
-		text: 'Tchèssi was a crucial part of our development team during his time with us. His ability to quickly understand complex projects and provide innovative solutions was highly appreciated.',
-	},
-	{
-		name: 'Emily Clark',
-		position: 'Instructor @ TechUniversity',
-		text: 'Tchèssi has been an outstanding student. His curiosity and passion for web development are remarkable. He always pushed the boundaries and took initiatives to learn beyond the curriculum.',
-	},
-	{
-		name: 'Michael Johnson',
-		position: 'CTO @ NextGen IT',
-		text: 'Tchèssi was a pleasure to have in the team. His adaptability and willingness to take on new challenges helped drive our projects forward. He would be an asset to any team.',
-	},
-];
-
 export const TestimonialsSection = () => {
 	const t = useTranslations('testimonials');
+
+	const testimonials = [
+		{
+			name: t('testimonial1.name'),
+			position: t('testimonial1.position'),
+			text: t('testimonial1.text'),
+			avatar: memojiAvatar1,
+		},
+		{
+			name: t('testimonial2.name'),
+			position: t('testimonial2.position'),
+			text: t('testimonial2.text'),
+			avatar: memojiAvatar2,
+		},
+		{
+			name: t('testimonial3.name'),
+			position: t('testimonial3.position'),
+			text: t('testimonial3.text'),
+			avatar: memojiAvatar3,
+		},
+		{
+			name: t('testimonial4.name'),
+			position: t('testimonial4.position'),
+			text: t('testimonial4.text'),
+			avatar: memojiAvatar4,
+		},
+		{
+			name: t('testimonial5.name'),
+			position: t('testimonial5.position'),
+			text: t('testimonial5.text'),
+			avatar: memojiAvatar5,
+		},
+	];
 
 	return (
 		<div className='py-16 lg:py-24'>
@@ -70,14 +75,14 @@ export const TestimonialsSection = () => {
 										<div className='flex gap-4 items-center'>
 											<div className='size-14 bg-gray-700 inline-flex items-center justify-center rounded-full flex-shrink-0'>
 												<Image
-													src={avatars[idx]}
+													src={testimonial.avatar}
 													alt={testimonial.name}
 													className='max-h-full'
 												/>
 											</div>
 											<div>
 												<div className='font-semibold'>{testimonial.name}</div>
-												<div className='text-sm text-white/40'>
+												<div className='text-sm text-white/80'>
 													{testimonial.position}
 												</div>
 											</div>

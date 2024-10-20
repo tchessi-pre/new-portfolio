@@ -6,7 +6,7 @@
 		"contact": "Contact"
 	},
 	"hero": {
-		"title": "Créer des expériences utilisateur exceptionnelles",
+		"title": "Bonjour, je suis Tchèssi. Créateur d'expériences numériques.",
 		"subtitle": "Je me spécialise dans la transformation de designs en applications web fonctionnelles et performantes.",
 		"availableForProjects": "Disponible pour de nouveaux projets",
 		"exploreWork": "Découvrez mon travail",
@@ -74,6 +74,31 @@
 	"testimonials": {
 		"eyebrow": "Collègues et mentors satisfaits",
 		"title": "Ce que les gens disent de moi",
-		"description": "Voici ce que certains de mes collègues et mentors ont à dire sur mon travail et ma performance pendant mes études et mon alternance."
+		"description": "Voici ce que certains de mes collègues et mentors ont à dire sur mon travail et mes performances pendant mes études et mon stage.",
+		"testimonial1": {
+			"name": "John Doe",
+			"position": "Mentor @ WebAcademy",
+			"text": "Tchèssi a démontré une croissance exceptionnelle au cours de son temps avec nous. Son engagement à maîtriser à la fois les technologies front-end et back-end est remarquable. Il a toujours livré les projets à temps et dépassé les attentes."
+		},
+		"testimonial2": {
+			"name": "Sarah Lee",
+			"position": "Développeur principal @ Digital Solutions",
+			"text": "Travailler avec Tchèssi a été une excellente expérience. Il a rapidement appris et appliqué de nouveaux concepts, et ses compétences en résolution de problèmes ont été inestimables pour l'équipe. Son travail sur nos outils internes a considérablement amélioré la productivité de l'équipe."
+		},
+		"testimonial3": {
+			"name": "David Brown",
+			"position": "Chef de projet @ CodeWorks",
+			"text": "Tchèssi a été un élément crucial de notre équipe de développement pendant son passage chez nous. Sa capacité à comprendre rapidement des projets complexes et à proposer des solutions innovantes a été très appréciée."
+		},
+		"testimonial4": {
+			"name": "Emily Clark",
+			"position": "Instructeur @ TechUniversity",
+			"text": "Tchèssi a été un étudiant exceptionnel. Sa curiosité et sa passion pour le développement web sont remarquables. Il a toujours repoussé les limites et pris des initiatives pour apprendre au-delà du programme."
+		},
+		"testimonial5": {
+			"name": "Michael Johnson",
+			"position": "CTO @ NextGen IT",
+			"text": "Tchèssi a été un plaisir à avoir dans l'équipe. Son adaptabilité et sa volonté de relever de nouveaux défis ont contribué à faire avancer nos projets. Il serait un atout pour toute équipe."
+		}
 	}
 }

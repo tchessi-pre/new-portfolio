@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
 	content: [
@@ -11,6 +11,9 @@ const config: Config = {
 	theme: {
 		screens: {
 			lg: '1200px',
+			md: '768px',
+			sm: '640px',
+			xl: '1440px',
 		},
 		container: {
 			center: true,
@@ -28,6 +31,9 @@ const config: Config = {
 				'ping-large': 'ping-large 1s ease-in-out infinite',
 				'move-left': 'move-left 1s linear infinite',
 				'move-right': 'move-right 1s linear infinite',
+				'fade-in': 'fade-in 2s ease-in-out forwards',
+				typing:
+					'typing 3s steps(30, end), blink 0.75s step-end infinite alternate',
 			},
 			keyframes: {
 				'ping-large': {
@@ -52,9 +58,32 @@ const config: Config = {
 						transform: 'translateX(0%)',
 					},
 				},
+				'fade-in': {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' },
+				},
+				typing: {
+					'0%': { width: '0' },
+					'100%': { width: '100%' },
+				},
+				blink: {
+					'0%, 100%': { borderColor: 'transparent' },
+					'50%': { borderColor: 'black' },
+				},
+			},
+			colors: {
+				emerald: {
+					300: '#6ee7b7',
+					400: '#34d399',
+				},
+				gray: {
+					900: '#1a1a1a',
+					700: '#2d2d2d',
+				},
 			},
 		},
 	},
 	plugins: [],
 };
+
 export default config;

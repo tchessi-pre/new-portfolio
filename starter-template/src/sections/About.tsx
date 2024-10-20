@@ -3,7 +3,7 @@
 import { Card } from '@/components/Card';
 import { SectionHeader } from '@/components/SectionHeader';
 import bookImage from '@/assets/images/book-cover.png';
-import mapImage from '@/assets/images/map.png';
+import mapImage from '@/assets/images/mapM.png';
 import Image from 'next/image';
 import smileMemoji from '@/assets/images/memoji-smile.png';
 import JavascriptIcon from '@/assets/icons/square-js.svg';
@@ -146,7 +146,7 @@ export const AboutSection = () => {
 	];
 
 	return (
-		<div className='py-20 lg:py-28'>
+		<div className='py-20 lg:py-28' id='about'>
 			<div className='container'>
 				<SectionHeader
 					eyebrow={t('eyebrow')}
@@ -211,11 +211,18 @@ export const AboutSection = () => {
 							</div>
 						</Card>
 						<Card className='h-[320px] p-0 relative md:col-span-2 lg:col-span-1'>
-							<Image
-								src={mapImage}
-								alt='map'
-								className='h-full w-full object-cover object-left-top'
-							/>
+							<div className='relative h-full w-full'>
+								<iframe
+									src='https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d46446.65495417451!2d5.3903360000000005!3d43.3160192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1729360245919!5m2!1sfr!2sfr'
+									width='600'
+									height='450'
+									style={{ border: 0 }}
+									allowFullScreen
+									loading='lazy'
+									referrerPolicy='no-referrer-when-downgrade'
+									title='Carte interactive de Marseille'
+								></iframe>
+							</div>
 							<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full  after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
 								<div className='absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-20 animate-ping [animation-duration:2s]'></div>
 								<div className='absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-10 '></div>
