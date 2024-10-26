@@ -2,8 +2,11 @@
 
 import Image from 'next/image';
 import darkSaasLandingPage from '@/assets/images/dark-saas-landing-page.png';
-import lightSaasLandingPage from '@/assets/images/light-saas-landing-page.png';
-import aiStartupLandingPage from '@/assets/images/ai-startup-landing-page.png';
+import LeChaudronLandingPage from '@/assets/images/lechaudronafricain.png';
+import ReserviaLandingPage from '@/assets/images/reservia.png';
+import OhmyfooLandingPage from '@/assets/images/Omyfood.png';
+import LaChouetteAgenceLandingPage from '@/assets/images/lachouetteagence.png';
+import BlogLandingPage from '@/assets/images/blog.png';
 import CheckCircleIcon from '@/assets/icons/check-circle.svg';
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
 import { SectionHeader } from '../components/SectionHeader';
@@ -12,40 +15,64 @@ import { useTranslations } from 'next-intl';
 
 const portfolioProjects = [
 	{
-		company: 'Acme Corp',
-		year: '2022',
-		title: 'Dark Saas Landing Page',
+		company: 'Le Chaudron Africain',
+		year: '2024',
+		title: 'Restaurant Africain à Marseille',
 		results: [
 			{ title: 'enhancedUserExperience', value: 40 },
 			{ title: 'improvedSiteSpeed', value: 50 },
 			{ title: 'increasedMobileTraffic', value: 35 },
 		],
-		link: 'https://youtu.be/4k7IdSLxh6w',
-		image: darkSaasLandingPage,
+		link: 'https://lechaudronafricain.com/',
+		image: LeChaudronLandingPage,
 	},
 	{
-		company: 'Innovative Co',
-		year: '2021',
-		title: 'Light Saas Landing Page',
+		company: 'Ohmyfood',
+		year: 'HTML, SCSS',
+		title: 'Créer et dynamiser un site web',
 		results: [
 			{ title: 'boostedSales', value: 20 },
 			{ title: 'expandedCustomerReach', value: 35 },
 			{ title: 'increasedBrandAwareness', value: 15 },
 		],
-		link: 'https://youtu.be/7hi5zwO75yc',
-		image: lightSaasLandingPage,
+		link: 'https://tchessi-pre.github.io/Tchessipre_03_19052021/',
+		image: OhmyfooLandingPage,
 	},
-	{
-		company: 'Quantum Dynamics',
-		year: '2023',
-		title: 'AI Startup Landing Page',
+	{	
+		company: "Création d'un blog",
+		year: 'SYMFONY, PHP',
+		title: "Création d'un Blog",
 		results: [
 			{ title: 'enhancedUserExperience', value: 40 },
 			{ title: 'improvedSiteSpeed', value: 50 },
 			{ title: 'increasedMobileTraffic', value: 35 },
 		],
-		link: 'https://youtu.be/Z7I5uSRHMHg',
-		image: aiStartupLandingPage,
+		link: 'https://tchessi-pre.github.io/Tchessipre_03_19052021/',
+		image: BlogLandingPage,
+	},
+	{
+		company: "La Chouette Agence",
+		year: 'SEO',
+		title: "Optimisation d'un site web existant, SEO",
+		results: [
+			{ title: 'enhancedUserExperience', value: 40 },
+			{ title: 'improvedSiteSpeed', value: 50 },
+			{ title: 'increasedMobileTraffic', value: 35 },
+		],
+		link: 'https://tchessi-pre.github.io/Lachouetteagence/',
+		image: LaChouetteAgenceLandingPage,
+	},
+	{
+		company: "Reservia",
+		year: 'HTML, CSS',
+		title: "Transformer d'une maquette en site web",
+		results: [
+			{ title: 'enhancedUserExperience', value: 40 },
+			{ title: 'improvedSiteSpeed', value: 50 },
+			{ title: 'increasedMobileTraffic', value: 35 },
+		],
+		link: 'https://tchessi-pre.github.io/Tchessipre_2_15042021/',
+		image: ReserviaLandingPage,
 	},
 ];
 

@@ -32,6 +32,8 @@ const config: Config = {
 				'move-left': 'move-left 1s linear infinite',
 				'move-right': 'move-right 1s linear infinite',
 				'fade-in': 'fade-in 2s ease-in-out forwards',
+				ripple: 'ripple 1.2s ease-out infinite',
+				'fade-in2': 'fadeIn 2s ease-in-out',
 				typing:
 					'typing 3s steps(30, end), blink 0.75s step-end infinite alternate',
 			},
@@ -41,6 +43,10 @@ const config: Config = {
 						transform: 'scale(3)',
 						opacity: '0',
 					},
+				},
+				ripple: {
+					'0%': { transform: 'scale(0.5)', opacity: '1' },
+					'100%': { transform: 'scale(1.5)', opacity: '0' },
 				},
 				'move-left': {
 					'0%': {

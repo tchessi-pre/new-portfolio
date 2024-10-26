@@ -11,7 +11,6 @@ import { HeroOrbit } from '@/components/HeroOrbit';
 
 export const HeroSection = () => {
 	const t = useTranslations('hero'); 
-	const firstName = 'Tchèssi';
 
 	return (
 		<div
@@ -124,13 +123,13 @@ export const HeroSection = () => {
 				<div className='max-w-lg mx-auto'>
 					<h1 className='font-serif text-3xl md:text-4xl text-center mt-8 tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text'>
 						{t('title').split('Tchèssi')[0]}
-						<span className='text-white font-bold inline-block animate-fade-in'>
+						<span className='text-white/80 font-bold inline-block animate-fade-in'>
 							Tchèssi
 						</span>
 						{t('title').split('Tchèssi')[1]}
 					</h1>
 
-					<p className='mt-4 text-center text-white md:text-lg'>
+					<p className='mt-4 text-center text-white/60 md:text-lg'>
 						{t('subtitle')}
 					</p>
 				</div>

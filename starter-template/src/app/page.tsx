@@ -1,3 +1,8 @@
+// pages/Home.tsx
+'use client';
+
+import { useState, useEffect } from 'react';
+import Loader from '@/components/Loader';
 import { Header } from '@/sections/Header';
 import { HeroSection } from '@/sections/Hero';
 import { ProjectsSection } from '@/sections/Projects';
@@ -8,19 +13,36 @@ import { ContactSection } from '@/sections/Contact';
 import { Footer } from '@/sections/Footer';
 import { ScrollToTopButton } from '@/components/ScrollToTopButton';
 
+const Home: React.FC = () => {
+	const [isLoading, setIsLoading] = useState<boolean>(true);
 
-export default function Home() {
-  return (
+	useEffect(() => {
+		const timer = setTimeout(() => {
+			setIsLoading(false);
+		}, 1500);
+
+		return () => clearTimeout(timer);
+	}, []);
+
+	return (
 		<div>
-			<Header />
-			<HeroSection />
-			<ProjectsSection />
-			<TapeSection />
-			<TestimonialsSection />
-			<AboutSection />
-			<ContactSection />
-			<Footer />
-			<ScrollToTopButton />
+			{isLoading ? (
+				<Loader />
+			) : (
+				<>
+					<Header />
+					<HeroSection />
+					<ProjectsSection />
+					<TapeSection />
+					<TestimonialsSection />
+					<AboutSection />
+					<ContactSection />
+					<Footer />
+					<ScrollToTopButton />
+				</>
+			)}
 		</div>
 	);
-}
+};
+
+export default Home;

@@ -22,6 +22,10 @@ import StrapiIcon from '@/assets/icons/strapi-svgrepo-com.svg';
 import MaterialUiIcon from '@/assets/icons/material-ui-svgrepo-com.svg';
 import KubernetesIcon from '@/assets/icons/kubernetes-svgrepo-com (1).svg';
 import AngularJsIcon from '@/assets/icons/angularjs-svgrepo-com.svg';
+import PostgreSQLIcon from '@/assets/icons/postgresql-svgrepo-com.svg';
+import MySQLIcon from '@/assets/icons/mysql-svgrepo-com.svg';
+import TypeScriptIcon from '@/assets/icons/brand-typescript-svgrepo-com.svg';
+import MongoDBIcon from '@/assets/icons/mongodb-svgrepo-com.svg';
 import { CardHeader } from '@/components/CardHeader';
 import { ToolboxItems } from '@/components/ToolboxItems';
 import { motion } from 'framer-motion';
@@ -62,6 +66,10 @@ const toolboxItems = [
 		iconType: DockerIcon,
 	},
 	{
+		title: 'TypeScript',
+		iconType: TypeScriptIcon,
+	},
+	{
 		title: 'NestJS',
 		iconType: NestJsIcon,
 	},
@@ -92,6 +100,18 @@ const toolboxItems = [
 	{
 		title: 'AngularJS',
 		iconType: AngularJsIcon,
+	},
+	{
+		title: 'PostgreSQL',
+		iconType: PostgreSQLIcon,
+	},
+	{
+		title: 'MySQL',
+		iconType: MySQLIcon,
+	},
+	{
+		title: 'MongoDB',
+		iconType: MongoDBIcon,
 	},
 ];
 

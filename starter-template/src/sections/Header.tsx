@@ -1,7 +1,9 @@
+// Header.tsx
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { LanguageSwitcher } from '../components/LanguageSwitcher';
+import { LanguageSwitcher } from '@/components/LanguageSwitcher';
+import { ThemeSwitcher } from '@/components/ThemeSwitcher';
 
 export const Header = () => {
 	const t = useTranslations('header');
@@ -36,9 +38,13 @@ export const Header = () => {
 				<div className='hidden md:flex md:ml-auto'>
 					<LanguageSwitcher />
 				</div>
+				<div className='hidden md:flex'>
+					<ThemeSwitcher />
+				</div>
 			</nav>
-			{/* Bouton de changement de langue en position fixe pour mobile */}
-			<div className='md:hidden fixed right-4 top-16'>
+			{/* Boutons de changement de langue et de thème pour les mobiles */}
+			<div className='flex fixed top-16 w-full justify-between px-8 md:hidden'>
+				<ThemeSwitcher />
 				<LanguageSwitcher />
 			</div>
 		</div>
