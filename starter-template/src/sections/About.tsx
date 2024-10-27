@@ -3,7 +3,7 @@
 import { Card } from '@/components/Card';
 import { SectionHeader } from '@/components/SectionHeader';
 import bookImage from '@/assets/images/book-cover.png';
-import mapImage from '@/assets/images/mapM.png';
+import habitImage from '@/assets/images/habit.webp';
 import Image from 'next/image';
 import smileMemoji from '@/assets/images/memoji-smile.png';
 import JavascriptIcon from '@/assets/icons/square-js.svg';
@@ -26,6 +26,10 @@ import PostgreSQLIcon from '@/assets/icons/postgresql-svgrepo-com.svg';
 import MySQLIcon from '@/assets/icons/mysql-svgrepo-com.svg';
 import TypeScriptIcon from '@/assets/icons/brand-typescript-svgrepo-com.svg';
 import MongoDBIcon from '@/assets/icons/mongodb-svgrepo-com.svg';
+import YarnIcon from '@/assets/icons/yarn-svgrepo-com.svg';
+import NpmIcon from '@/assets/icons/npm-svgrepo-com.svg';
+import PnpmIcon from '@/assets/icons/light-pnpm-svgrepo-com.svg';
+import GitIcon from '@/assets/icons/git-svgrepo-com.svg';
 import { CardHeader } from '@/components/CardHeader';
 import { ToolboxItems } from '@/components/ToolboxItems';
 import { motion } from 'framer-motion';
@@ -56,6 +60,10 @@ const toolboxItems = [
 	{
 		title: 'Github',
 		iconType: GithubIcon,
+	},
+	{
+		title: 'Git',
+		iconType: GitIcon,
 	},
 	{
 		title: 'Golang',
@@ -113,12 +121,28 @@ const toolboxItems = [
 		title: 'MongoDB',
 		iconType: MongoDBIcon,
 	},
+	{
+		title: 'Yarn',
+		iconType: YarnIcon,
+	},
+	{
+		title: 'NPM',
+		iconType: NpmIcon,
+	},
+	{
+		title: 'PNPM',
+		iconType: PnpmIcon,
+	},
 ];
 
-
 export const AboutSection = () => {
-	const t = useTranslations('about'); 
+	const t = useTranslations('about');
 	const constraintRef = useRef(null);
+	const selectedImage = t('image') === 'habitImage' ? habitImage : bookImage;
+
+	// Récupération de la largeur et de la hauteur avec des valeurs par défaut
+	const width = Number(t('width', { default: '160' }));
+	const height = Number(t('height', { default: '240' }));
 
 	const hobbies = [
 		{
@@ -182,7 +206,12 @@ export const AboutSection = () => {
 								description={t('myReadsDescription')}
 							/>
 							<div className='w-40 mx-auto mt-2 md:mt-0'>
-								<Image src={bookImage} alt='Book cover' />
+								<Image
+									src={selectedImage}
+									alt={t('alt')}
+									width={width}
+									height={height}
+								/>
 							</div>
 						</Card>
 						<Card className='h-[320px] md:col-span-3 lg:col-span-2'>

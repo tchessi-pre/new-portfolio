@@ -51,6 +51,10 @@
 		"myReadsDescription": "Découvrez les livres qui façonnent ma vision du monde.",
 		"myToolboxTitle": "Ma boîte à outils",
 		"myToolboxDescription": "Découvrez les technologies et outils que j'utilise pour créer des expériences numériques exceptionnelles.",
+		"image": "habitImage",
+    "alt": "Couverture du livre",
+    "width": "160",
+    "height": "240",
 		"beyondCodeTitle": "Au-delà du code",
 		"beyondCodeDescription": "Découvrez mes centres d'intérêt et loisirs au-delà du monde numérique.",
 		"hobbies": {
@@ -100,5 +104,9 @@
 			"position": "CTO @ NextGen IT",
 			"text": "Tchèssi a été un plaisir à avoir dans l'équipe. Son adaptabilité et sa volonté de relever de nouveaux défis ont contribué à faire avancer nos projets. Il serait un atout pour toute équipe."
 		}
+	},
+	"loader": {
+		"loading": "Chargement...",
+		"introduction": "Je suis Tchèssi, ingénieur web"
 	}
 }

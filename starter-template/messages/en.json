@@ -51,6 +51,10 @@
 		"myReadsDescription": "Explore the books shaping my perspectives.",
 		"myToolboxTitle": "My Toolbox",
 		"myToolboxDescription": "Explore the technologies and tools I use to craft exceptional digital experiences.",
+		"image": "bookImage",
+		"alt": "Book cover",
+		"width": 160,
+    "height": 240,
 		"beyondCodeTitle": "Beyond the Code",
 		"beyondCodeDescription": "Explore my interests and hobbies beyond the digital realm.",
 		"hobbies": {
@@ -100,5 +104,9 @@
 			"position": "CTO @ NextGen IT",
 			"text": "Tchèssi was a pleasure to have in the team. His adaptability and willingness to take on new challenges helped drive our projects forward. He would be an asset to any team."
 		}
+	},
+	"loader": {
+		"loading": "Loading...",
+		"introduction": "I am Tchèssi, a web engineer"
 	}
 }
