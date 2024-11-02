@@ -10,7 +10,7 @@ import SparkleIcon from '@/assets/icons/sparkle.svg';
 import { HeroOrbit } from '@/components/HeroOrbit';
 
 export const HeroSection = () => {
-	const t = useTranslations('hero'); 
+	const t = useTranslations('hero');
 
 	return (
 		<div
@@ -136,22 +136,20 @@ export const HeroSection = () => {
 				<div className='flex flex-col md:flex-row justify-center items-center mt-8 gap-4'>
 					<button
 						onClick={() =>
-							document
-								.getElementById('explore-section')
-								?.scrollIntoView({ behavior: 'smooth' })
+							window.open('https://github.com/tchessi-pre', '_blank')
 						}
-						className='inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl'
+						className='relative inline-flex items-center gap-2 border border-white/50 px-6 h-12 rounded-xl transition-all duration-300 hover:border-white hover:bg-white/10 active:bg-white/20 animate-pulse'
 					>
 						<span className='font-semibold'>{t('exploreWork')}</span>
-						<ArrowDown className='size-4' />
+						<ArrowDown className='size-4 transition-transform duration-500 ease-in-out hover:translate-y-1' />
 					</button>
 					<button
 						onClick={() =>
 							document
-								.getElementById('contact-section')
+								.getElementById('contact')
 								?.scrollIntoView({ behavior: 'smooth' })
 						}
-						className='inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl'
+						className='inline-flex items-center relative gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl transition-all duration-300 hover:bg-gray-200 hover:border-gray-300 hover:text-gray-800 hover:shadow-lg'
 					>
 						<span>✌️</span>
 						<span className='font-semibold'>{t('letsConnect')}</span>

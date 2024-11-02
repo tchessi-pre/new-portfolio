@@ -7,10 +7,10 @@ import habitImage from '@/assets/images/habit.webp';
 import Image from 'next/image';
 import smileMemoji from '@/assets/images/memoji-smile.png';
 import JavascriptIcon from '@/assets/icons/square-js.svg';
+import PhpIcon from '@/assets/icons/php-svgrepo-com.svg';
 import HTMLIcon from '@/assets/icons/html5.svg';
 import CssIcon from '@/assets/icons/css3.svg';
 import ReactIcon from '@/assets/icons/react.svg';
-import ChromeIcon from '@/assets/icons/chrome.svg';
 import GithubIcon from '@/assets/icons/github.svg';
 import GoIcon from '@/assets/icons/go-svgrepo-com.svg';
 import DockerIcon from '@/assets/icons/docker-icon-svgrepo-com.svg';
@@ -20,6 +20,7 @@ import TailwindIcon from '@/assets/icons/tailwindcss-svgrepo-com.svg';
 import VueJsIcon from '@/assets/icons/vuejs-svgrepo-com.svg';
 import StrapiIcon from '@/assets/icons/strapi-svgrepo-com.svg';
 import MaterialUiIcon from '@/assets/icons/material-ui-svgrepo-com.svg';
+import PythonIcon from '@/assets/icons/python-svgrepo-com.svg';
 import KubernetesIcon from '@/assets/icons/kubernetes-svgrepo-com (1).svg';
 import AngularJsIcon from '@/assets/icons/angularjs-svgrepo-com.svg';
 import PostgreSQLIcon from '@/assets/icons/postgresql-svgrepo-com.svg';
@@ -42,6 +43,22 @@ const toolboxItems = [
 		iconType: JavascriptIcon,
 	},
 	{
+		title: 'TypeScript',
+		iconType: TypeScriptIcon,
+	},
+	{
+		title: 'Golang',
+		iconType: GoIcon,
+	},
+	{
+		title: 'Php',
+		iconType: PhpIcon,
+	},
+	{
+		title: 'Python',
+		iconType: PythonIcon,
+	},
+	{
 		title: 'HTML5',
 		iconType: HTMLIcon,
 	},
@@ -50,12 +67,28 @@ const toolboxItems = [
 		iconType: CssIcon,
 	},
 	{
+		title: 'Tailwind',
+		iconType: TailwindIcon,
+	},
+	{
+		title: 'Material UI',
+		iconType: MaterialUiIcon,
+	},
+	{
 		title: 'React',
 		iconType: ReactIcon,
 	},
 	{
-		title: 'Chrome',
-		iconType: ChromeIcon,
+		title: 'NextJS',
+		iconType: NextJsIcon,
+	},
+	{
+		title: 'VueJS',
+		iconType: VueJsIcon,
+	},
+	{
+		title: 'AngularJS',
+		iconType: AngularJsIcon,
 	},
 	{
 		title: 'Github',
@@ -66,48 +99,20 @@ const toolboxItems = [
 		iconType: GitIcon,
 	},
 	{
-		title: 'Golang',
-		iconType: GoIcon,
-	},
-	{
-		title: 'Docker',
-		iconType: DockerIcon,
-	},
-	{
-		title: 'TypeScript',
-		iconType: TypeScriptIcon,
-	},
-	{
 		title: 'NestJS',
 		iconType: NestJsIcon,
-	},
-	{
-		title: 'NextJS',
-		iconType: NextJsIcon,
-	},
-	{
-		title: 'Tailwind',
-		iconType: TailwindIcon,
-	},
-	{
-		title: 'VueJS',
-		iconType: VueJsIcon,
 	},
 	{
 		title: 'Strapi',
 		iconType: StrapiIcon,
 	},
 	{
-		title: 'Material UI',
-		iconType: MaterialUiIcon,
+		title: 'Docker',
+		iconType: DockerIcon,
 	},
 	{
 		title: 'Kubernetes',
 		iconType: KubernetesIcon,
-	},
-	{
-		title: 'AngularJS',
-		iconType: AngularJsIcon,
 	},
 	{
 		title: 'PostgreSQL',
@@ -141,51 +146,70 @@ export const AboutSection = () => {
 	const selectedImage = t('image') === 'habitImage' ? habitImage : bookImage;
 
 	// Récupération de la largeur et de la hauteur avec des valeurs par défaut
-	const width = Number(t('width', { default: '160' }));
-	const height = Number(t('height', { default: '240' }));
+	const width = Number(t('width', { default: 160 }));
+	const height = Number(t('height', { default: 240 }));
+
 
 	const hobbies = [
 		{
-			title: t('hobbies.painting'),
-			emoji: '🎨',
+			title: t('hobbies.music', { default: 'Music' }),
+			emoji: '🎶',
 			left: '5%',
 			top: '5%',
 		},
 		{
-			title: t('hobbies.photography'),
-			emoji: '📹',
+			title: t('hobbies.reading', { default: 'Reading' }),
+			emoji: '📚',
 			left: '50%',
 			top: '5%',
 		},
 		{
-			title: t('hobbies.hiking'),
-			emoji: '✌️',
+			title: t('hobbies.football', { default: 'Football' }),
+			emoji: '⚽',
 			left: '35%',
 			top: '40%',
 		},
 		{
-			title: t('hobbies.gaming'),
-			emoji: '🎮',
+			title: t('hobbies.badminton', { default: 'Badminton' }),
+			emoji: '🏸',
 			left: '10%',
 			top: '35%',
 		},
 		{
-			title: t('hobbies.music'),
-			emoji: '🎸',
+			title: t('hobbies.nature', { default: 'Nature' }),
+			emoji: '🌿',
 			left: '70%',
 			top: '45%',
 		},
 		{
-			title: t('hobbies.fitness'),
-			emoji: '🏋️‍♀️',
+			title: t('hobbies.guitar', { default: 'Guitar' }),
+			emoji: '🎸',
 			left: '5%',
 			top: '65%',
 		},
 		{
-			title: t('hobbies.reading'),
-			emoji: '📘',
+			title: t('hobbies.fitness', { default: 'Fitness' }),
+			emoji: '🏋️‍♂️',
 			left: '45%',
 			top: '70%',
+		},
+		{
+			title: t('hobbies.sports', { default: 'Sports' }),
+			emoji: '🏅',
+			left: '30%',
+			top: '80%',
+		},
+		{
+			title: t('hobbies.travel', { default: 'Travel' }),
+			emoji: '✈️',
+			left: '15%',
+			top: '60%',
+		},
+		{
+			title: t('hobbies.cooking', { default: 'Cooking' }),
+			emoji: '🍲',
+			left: '60%',
+			top: '30%',
 		},
 	];
 

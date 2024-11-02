@@ -6,23 +6,23 @@
 		"contact": "Contact"
 	},
 	"hero": {
-		"title": "Bonjour, je suis Tchèssi. Créateur d'expériences numériques.",
-		"subtitle": "Je me spécialise dans la transformation de designs en applications web fonctionnelles et performantes.",
+		"title": "Bonjour, je suis Tchèssi, Ingénieur Web Junior.",
+		"subtitle": "Jeune diplômé en ingénierie web, passionné par la création d'applications performantes et conviviales.",
 		"availableForProjects": "Disponible pour de nouveaux projets",
-		"exploreWork": "Découvrez mon travail",
-		"letsConnect": "Restons en contact"
+		"exploreWork": "Voir mon Github",
+		"letsConnect": "Entrons en contact"
 	},
 	"projects": {
 		"sectionHeader": {
-			"eyebrow": "Résultats concrets",
-			"title": "Projets phares",
-			"description": "Découvrez comment j'ai transformé des concepts en expériences numériques engageantes."
+			"eyebrow": "Projets Académiques et Personnels",
+			"title": "Projets Mis en Avant",
+			"description": "Découvrez des projets dans lesquels j'ai appliqué mes compétences en ingénierie pour concrétiser des concepts."
 		},
-		"visitLiveSite": "Visitez le site en direct",
+		"visitLiveSite": "Visiter le site",
 		"results": {
-			"enhancedUserExperience": "Expérience utilisateur améliorée de {percentage}%",
+			"enhancedUserExperience": "Amélioration de l'expérience utilisateur de {percentage}%",
 			"improvedSiteSpeed": "Vitesse du site améliorée de {percentage}%",
-			"increasedMobileTraffic": "Trafic mobile augmenté de {percentage}%",
+			"increasedMobileTraffic": "Augmentation du trafic mobile de {percentage}%",
 			"boostedSales": "Ventes augmentées de {percentage}%",
 			"expandedCustomerReach": "Portée client élargie de {percentage}%",
 			"increasedBrandAwareness": "Notoriété de la marque augmentée de {percentage}%"
@@ -34,79 +34,86 @@
 			"word2": "Accessible",
 			"word3": "Sécurisé",
 			"word4": "Interactif",
-			"word5": "Scalable",
+			"word5": "Évolutif",
 			"word6": "Convivial",
 			"word7": "Responsive",
 			"word8": "Maintenable",
-			"word9": "Optimisation pour la recherche",
+			"word9": "Optimisé",
 			"word10": "Utilisable",
 			"word11": "Fiable"
 		}
 	},
 	"about": {
 		"eyebrow": "À propos de moi",
-		"title": "Un aperçu de mon univers",
-		"description": "En savoir plus sur qui je suis, ce que je fais et ce qui m'inspire",
-		"myReadsTitle": "Mes lectures",
-		"myReadsDescription": "Découvrez les livres qui façonnent ma vision du monde.",
-		"myToolboxTitle": "Ma boîte à outils",
-		"myToolboxDescription": "Découvrez les technologies et outils que j'utilise pour créer des expériences numériques exceptionnelles.",
-		"image": "habitImage",
-    "alt": "Couverture du livre",
-    "width": "160",
-    "height": "240",
-		"beyondCodeTitle": "Au-delà du code",
-		"beyondCodeDescription": "Découvrez mes centres d'intérêt et loisirs au-delà du monde numérique.",
+		"title": "De l'Étudiant à l'Ingénieur Web",
+		"description": "Jeune diplômé en ingénierie web avec une solide base en technologies front-end et back-end.",
+		"myReadsTitle": "Mes Lectures",
+		"myReadsDescription": "Des livres qui ont façonné ma croissance et ma perspective.",
+		"myToolboxTitle": "Ma Boîte à Outils",
+		"myToolboxDescription": "Technologies et outils que j'ai maîtrisés au cours de mes études et projets personnels.",
+		"image": "graduationImage",
+		"alt": "Chapeau de graduation",
+		"width": "160",
+		"height": "240",
+		"beyondCodeTitle": "Au-delà du Code",
+		"beyondCodeDescription": "En dehors du code, mes intérêts nourrissent ma créativité et mes compétences en résolution de problèmes.",
 		"hobbies": {
-			"painting": "Peinture",
-			"photography": "Photographie",
-			"hiking": "Randonnée",
-			"gaming": "Jeux vidéo",
 			"music": "Musique",
+			"reading": "Lecture",
+			"football": "Football",
+			"badminton": "Badminton",
+			"nature": "Nature",
+			"guitar": "Guitare",
 			"fitness": "Fitness",
-			"reading": "Lecture"
+			"sports": "Sports",
+			"travel": "Voyage",
+			"cooking": "Cuisine"
 		}
 	},
 	"contact": {
-		"heading": "Créons quelque chose d'incroyable ensemble",
-		"description": "Prêt à donner vie à votre prochain projet ? Connectons-nous et discutons de la manière dont je peux vous aider à atteindre vos objectifs.",
-		"buttonText": "Contactez-moi"
+		"eyebrow": "Me Contacter",
+		"title": "Construisons Ensemble",
+		"heading": "Prêt à Contribuer à Votre Entreprise",
+		"description": "Je souhaite mettre mes compétences au service d'une entreprise ambitieuse et innovante. Discutons de la manière dont je peux contribuer à vos projets et objectifs.",
+		"buttonText": "Visitez mon LinkedIn",
+		"personalStatement": "Animé par l'innovation et l'efficacité, j'apporte une perspective dynamique et créative pour renforcer le succès de votre entreprise."
 	},
 	"footer": {
-		"copyright": "2024. Tous droits réservés."
+		"copyright": "2024. Tous droits réservés.",
+		"cvLink": "Télécharger CV"
 	},
 	"testimonials": {
-		"eyebrow": "Collègues et mentors satisfaits",
-		"title": "Ce que les gens disent de moi",
-		"description": "Voici ce que certains de mes collègues et mentors ont à dire sur mon travail et mes performances pendant mes études et mon stage.",
+		"eyebrow": "Mentors et Professeurs",
+		"title": "Ce que mes Mentors Disent de Moi",
+		"description": "Voici ce que mes professeurs et mentors disent de mes compétences et de mes performances pendant mes études.",
 		"testimonial1": {
 			"name": "John Doe",
-			"position": "Mentor @ WebAcademy",
-			"text": "Tchèssi a démontré une croissance exceptionnelle au cours de son temps avec nous. Son engagement à maîtriser à la fois les technologies front-end et back-end est remarquable. Il a toujours livré les projets à temps et dépassé les attentes."
+			"position": "Professeur @ WebAcademy",
+			"text": "Tchèssi a démontré une progression exceptionnelle et une volonté de maîtriser les technologies front-end et back-end. Il a toujours fourni un travail de qualité, dépassant les attentes dans tous les projets."
 		},
 		"testimonial2": {
 			"name": "Sarah Lee",
-			"position": "Développeur principal @ Digital Solutions",
-			"text": "Travailler avec Tchèssi a été une excellente expérience. Il a rapidement appris et appliqué de nouveaux concepts, et ses compétences en résolution de problèmes ont été inestimables pour l'équipe. Son travail sur nos outils internes a considérablement amélioré la productivité de l'équipe."
+			"position": "Développeuse principale @ Digital Solutions",
+			"text": "Pendant son stage, Tchèssi a rapidement appris et s'est adapté aux nouveaux concepts, avec des compétences en résolution de problèmes très appréciées. Son travail sur nos outils internes a été très bénéfique pour notre équipe."
 		},
 		"testimonial3": {
 			"name": "David Brown",
-			"position": "Chef de projet @ CodeWorks",
-			"text": "Tchèssi a été un élément crucial de notre équipe de développement pendant son passage chez nous. Sa capacité à comprendre rapidement des projets complexes et à proposer des solutions innovantes a été très appréciée."
+			"position": "Superviseur de projet @ CodeWorks",
+			"text": "Tchèssi a été un membre essentiel de notre équipe pendant son stage. Sa capacité à comprendre rapidement des projets complexes et à contribuer efficacement a été grandement appréciée."
 		},
 		"testimonial4": {
 			"name": "Emily Clark",
-			"position": "Instructeur @ TechUniversity",
-			"text": "Tchèssi a été un étudiant exceptionnel. Sa curiosité et sa passion pour le développement web sont remarquables. Il a toujours repoussé les limites et pris des initiatives pour apprendre au-delà du programme."
+			"position": "Enseignante @ TechUniversity",
+			"text": "Tchèssi a été un étudiant exceptionnel. Sa curiosité et sa passion pour le développement web sont remarquables. Il a souvent dépassé le programme pour approfondir ses connaissances."
 		},
 		"testimonial5": {
 			"name": "Michael Johnson",
 			"position": "CTO @ NextGen IT",
-			"text": "Tchèssi a été un plaisir à avoir dans l'équipe. Son adaptabilité et sa volonté de relever de nouveaux défis ont contribué à faire avancer nos projets. Il serait un atout pour toute équipe."
+			"text": "L'adaptabilité de Tchèssi et sa volonté de relever de nouveaux défis étaient évidentes durant son stage. Il serait un atout pour toute équipe cherchant un jeune talent avec une solide base en ingénierie web."
 		}
 	},
 	"loader": {
 		"loading": "Chargement...",
-		"introduction": "Je suis Tchèssi, ingénieur web"
+		"introduction": "Je suis Tchèssi, jeune diplômé en ingénierie web"
 	}
 }

@@ -6,19 +6,19 @@
 		"contact": "Contact"
 	},
 	"hero": {
-		"title": "Hi, I'm Tchèssi. Crafting Digital Experiences.",
-		"subtitle": "I specialize in transforming designs into functional, high-performing web applications.",
+		"title": "Hi, I'm Tchèssi. Aspiring Web Engineer.",
+		"subtitle": "A recent graduate in web engineering, passionate about building high-performing and user-friendly applications.",
 		"availableForProjects": "Available for new projects",
-		"exploreWork": "Explore My Work",
+		"exploreWork": "Explore My Github",
 		"letsConnect": "Let's Connect"
 	},
 	"projects": {
 		"sectionHeader": {
-			"eyebrow": "Real-world Results",
-			"title": "Featured Projects",
-			"description": "See how I transformed concepts into engaging digital experiences."
+			"eyebrow": "Academic and Personal Projects",
+			"title": "Highlighted Projects",
+			"description": "Explore projects where I applied my engineering skills to bring concepts to life."
 		},
-		"visitLiveSite": "Visit live Site",
+		"visitLiveSite": "Visit Live Site",
 		"results": {
 			"enhancedUserExperience": "Enhanced user experience by {percentage}%",
 			"improvedSiteSpeed": "Improved site speed by {percentage}%",
@@ -38,75 +38,82 @@
 			"word6": "User Friendly",
 			"word7": "Responsive",
 			"word8": "Maintainable",
-			"word9": "Search Optimisation",
+			"word9": "Optimized",
 			"word10": "Usable",
 			"word11": "Reliable"
 		}
 	},
 	"about": {
 		"eyebrow": "About Me",
-		"title": "A Glimpse Into My World",
-		"description": "Learn more about who I am, what I do, and what inspires me",
+		"title": "From Student to Web Engineer",
+		"description": "A recent graduate with a degree in web engineering, equipped with a solid foundation in both front-end and back-end technologies.",
 		"myReadsTitle": "My Reads",
-		"myReadsDescription": "Explore the books shaping my perspectives.",
+		"myReadsDescription": "Books that shaped my growth and perspective.",
 		"myToolboxTitle": "My Toolbox",
-		"myToolboxDescription": "Explore the technologies and tools I use to craft exceptional digital experiences.",
-		"image": "bookImage",
-		"alt": "Book cover",
-		"width": 160,
-    "height": 240,
+		"myToolboxDescription": "Technologies and tools I've mastered throughout my studies and personal projects.",
+		"image": "graduationImage",
+		"alt": "Graduation cap",
+		"width": "160",
+		"height": "240",
 		"beyondCodeTitle": "Beyond the Code",
-		"beyondCodeDescription": "Explore my interests and hobbies beyond the digital realm.",
+		"beyondCodeDescription": "Beyond coding, my interests fuel my creativity and problem-solving skills.",
 		"hobbies": {
-			"painting": "Painting",
-			"photography": "Photography",
-			"hiking": "Hiking",
-			"gaming": "Gaming",
 			"music": "Music",
+			"reading": "Reading",
+			"football": "Football",
+			"badminton": "Badminton",
+			"nature": "Nature",
+			"guitar": "Guitar",
 			"fitness": "Fitness",
-			"reading": "Reading"
+			"sports": "Sports",
+			"travel": "Travel",
+			"cooking": "Cooking"
 		}
 	},
 	"contact": {
-		"heading": "Let’s create something amazing together",
-		"description": "Ready to bring your next project to life? Let’s connect and discuss how I can help you achieve your goals.",
-		"buttonText": "Contact Me"
-	},
+	"eyebrow": "Contact Me",
+	"title": "Let's Build Together",
+	"heading": "Ready to Contribute to Your Company",
+	"description": "I’m eager to bring my skills to an ambitious and innovative company. Let’s discuss how I can help support your projects and goals.",
+	"buttonText": "Visit My LinkedIn",
+	"personalStatement": "Driven by innovation and efficiency, I bring a dynamic and creative perspective to enhance your company’s success."
+},
 	"footer": {
-		"copyright": "2024. All rights reserved."
+		"copyright": "2024. All rights reserved.",
+		"cvLink": "Download CV"
 	},
 	"testimonials": {
-		"eyebrow": "Satisfied Colleagues & Mentors",
-		"title": "What People Say About Me",
-		"description": "Here’s what some of my colleagues and mentors have to say about my work and performance during my studies and internship.",
+		"eyebrow": "Mentors and Professors",
+		"title": "What My Mentors Say",
+		"description": "Here’s what my professors and mentors have to say about my skills and performance during my studies.",
 		"testimonial1": {
 			"name": "John Doe",
-			"position": "Mentor @ WebAcademy",
-			"text": "Tchèssi has demonstrated exceptional growth during his time with us. His dedication to mastering both front-end and back-end technologies is commendable. He consistently delivered projects on time and exceeded expectations."
+			"position": "Professor @ WebAcademy",
+			"text": "Tchèssi demonstrated exceptional growth and a dedication to mastering both front-end and back-end technologies. He consistently delivered quality work and exceeded expectations in all assignments."
 		},
 		"testimonial2": {
 			"name": "Sarah Lee",
 			"position": "Lead Developer @ Digital Solutions",
-			"text": "Working with Tchèssi was a great experience. He was quick to learn and apply new concepts, and his problem-solving skills were invaluable to the team. His work on our internal tools greatly improved team productivity."
+			"text": "During his internship, Tchèssi was quick to learn and adapt to new concepts, demonstrating strong problem-solving skills. His work on our internal tools was highly valuable to our team."
 		},
 		"testimonial3": {
 			"name": "David Brown",
-			"position": "Project Manager @ CodeWorks",
-			"text": "Tchèssi was a crucial part of our development team during his time with us. His ability to quickly understand complex projects and provide innovative solutions was highly appreciated."
+			"position": "Project Supervisor @ CodeWorks",
+			"text": "Tchèssi was an essential part of our team during his internship. His ability to quickly understand complex projects and contribute effectively was greatly appreciated."
 		},
 		"testimonial4": {
 			"name": "Emily Clark",
 			"position": "Instructor @ TechUniversity",
-			"text": "Tchèssi has been an outstanding student. His curiosity and passion for web development are remarkable. He always pushed the boundaries and took initiatives to learn beyond the curriculum."
+			"text": "Tchèssi has been an outstanding student. His curiosity and passion for web development stood out. He often went beyond the curriculum to enhance his understanding."
 		},
 		"testimonial5": {
 			"name": "Michael Johnson",
 			"position": "CTO @ NextGen IT",
-			"text": "Tchèssi was a pleasure to have in the team. His adaptability and willingness to take on new challenges helped drive our projects forward. He would be an asset to any team."
+			"text": "Tchèssi's adaptability and willingness to take on new challenges were evident during his internship. He would be an asset to any team looking for fresh talent with a strong foundational knowledge."
 		}
 	},
 	"loader": {
 		"loading": "Loading...",
-		"introduction": "I am Tchèssi, a web engineer"
+		"introduction": "I am Tchèssi, a recent graduate in web engineering"
 	}
 }

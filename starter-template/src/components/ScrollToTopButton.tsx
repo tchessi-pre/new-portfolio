@@ -34,20 +34,22 @@ export const ScrollToTopButton = () => {
 			onClick={scrollToTop}
 			className={`
         fixed
-        bottom-5 right-5
-        p-4
+        bottom-6 right-6
+        w-12 h-12
+        flex items-center justify-center
         rounded-full
         text-white
-        transition-opacity duration-200
-        hover:bg-white hover:text-gray-900
+        transition-all duration-300 ease-in-out
+        bg-gradient-to-r from-emerald-500 to-emerald-700
+        shadow-lg
+        backdrop-blur-md
+        hover:scale-105 hover:shadow-xl hover:from-emerald-400 hover:to-emerald-600
         ${isVisible ? 'opacity-100' : 'opacity-0'}
-        bg-gray-700
-        border border-white/15
-        md:w-10 md:h-10 md:flex md:items-center md:justify-center
+        transform transition-opacity
       `}
 			aria-label='Scroll to top'
 		>
-			↑
+			<span className='text-2xl font-semibold'>↑</span>
 		</button>
 	);
 };
