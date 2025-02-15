@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { Card } from '@/components/Card';
 import { SectionHeader } from '@/components/SectionHeader';
 import bookImage from '@/assets/images/book-cover.png';
@@ -32,10 +33,21 @@ import NpmIcon from '@/assets/icons/npm-svgrepo-com.svg';
 import PnpmIcon from '@/assets/icons/light-pnpm-svgrepo-com.svg';
 import GitIcon from '@/assets/icons/git-svgrepo-com.svg';
 import { CardHeader } from '@/components/CardHeader';
+import LeftArrowIcon from '@/assets/icons/alt-arrow-left-svgrepo-com.svg';
+import RightArrowIcon from '@/assets/icons/alt-arrow-right-svgrepo-com.svg';
+
 import { ToolboxItems } from '@/components/ToolboxItems';
 import { motion } from 'framer-motion';
 import { useRef } from 'react';
 import { useTranslations } from 'next-intl';
+
+const images = [
+	{ src: '/napoleonhill.png', alt: 'Book Cover' },
+	{ src: '/habit.webp', alt: 'Habit Image' },
+	{ src: '/7-habit.png', alt: 'Habit Image' },
+	// Ajoutez d'autres images ici si nécessaire
+	// Ajoutez d'autres images ici si nécessaire
+];
 
 const toolboxItems = [
 	{
@@ -143,12 +155,29 @@ const toolboxItems = [
 export const AboutSection = () => {
 	const t = useTranslations('about');
 	const constraintRef = useRef(null);
-	const selectedImage = t('image') === 'habitImage' ? habitImage : bookImage;
+	// const selectedImage = t('image') === 'habitImage' ? habitImage : bookImage;
 
+	// Définition de l'index avec un type explicite
+	const [currentIndex, setCurrentIndex] = useState<number>(0);
+	const [direction, setDirection] = useState<number>(1);
 	// Récupération de la largeur et de la hauteur avec des valeurs par défaut
 	const width = Number(t('width', { default: 160 }));
 	const height = Number(t('height', { default: 240 }));
 
+	// Fonctions pour changer d'image
+	const goToPrevious = () => {
+		setDirection(1); // Set direction to -1 for previous
+		setCurrentIndex((prevIndex) =>
+			prevIndex === 0 ? images.length - 1 : prevIndex - 1
+		);
+	};
+
+	const goToNext = () => {
+		setDirection(-1); // Set direction to 1 for next
+		setCurrentIndex((prevIndex) =>
+			prevIndex === images.length - 1 ? 0 : prevIndex + 1
+		);
+	};
 
 	const hobbies = [
 		{
@@ -224,19 +253,44 @@ export const AboutSection = () => {
 
 				<div className='mt-20 flex flex-col gap-8'>
 					<div className='grid grid-col-1 gap-8 md:grid md:grid-cols-5 lg:grid-cols-3 '>
-						<Card className='h-[320px] md:col-span-2 lg:col-span-1'>
+						<Card className='h-[320px] md:col-span-2 lg:col-span-1 relative'>
 							<CardHeader
 								title={t('myReadsTitle')}
 								description={t('myReadsDescription')}
 							/>
-							<div className='w-40 mx-auto mt-2 md:mt-0'>
+
+							{/* Image with framer-motion for smooth transitions */}
+							<motion.div
+								key={currentIndex}
+								custom={direction}
+								initial={{ opacity: 0, x: direction === 1 ? 100 : -100 }}
+								animate={{ opacity: 1, x: 0 }}
+								exit={{ opacity: 0, x: direction === 1 ? -100 : 100 }}
+								transition={{ duration: 1 }}
+								className='w-40 mx-auto mt-2 md:mt-0'
+							>
 								<Image
-									src={selectedImage}
-									alt={t('alt')}
+									src={images[currentIndex].src}
+									alt={images[currentIndex].alt}
 									width={width}
 									height={height}
 								/>
-							</div>
+							</motion.div>
+
+							{/* Navigation Buttons */}
+							<button
+	onClick={goToPrevious}
+	className='absolute left-4 top-1/2 transform -translate-y-1/2 text-white rounded-full p-2 transition duration-300 ease-in-out hover:scale-110 hover:text-gray-900' aria-label='Previous Image'
+>
+	<LeftArrowIcon className='w-10 h-10 fill-current' />
+</button>
+<button
+	onClick={goToNext}
+	className='absolute right-4 top-1/2 transform -translate-y-1/2 text-white rounded-full p-2 transition duration-300 ease-in-out hover:scale-110 hover:text-gray-900' aria-label='Next Image'
+>
+	<RightArrowIcon className='w-10 h-10 fill-current' />
+</button>
+
 						</Card>
 						<Card className='h-[320px] md:col-span-3 lg:col-span-2'>
 							<CardHeader
