@@ -47,7 +47,7 @@ export default function RootLayout({
 				<meta charSet="UTF-8" />
 				<meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+				<meta name="google-site-verification" content="m8BKFNeqy4KvdNyB7Ci7vJdpKySCkpfggNspSHQlfYc" />
 				<title>Portfolio de Tchèssi</title>
 				<meta
 					name="description"
@@ -56,7 +56,7 @@ export default function RootLayout({
 				<meta name="author" content="Tchèssi PRE" />
 				<meta
 					name="keywords"
-					content="développement web, frontend, backend, React, Next.js, JavaScript, TypeScript, portfolio"
+					content="Tchessi Pre, Tchèssi, Ingenieur web , Marseille, développement web, frontend, backend, React, Next.js, JavaScript, TypeScript, portfolio"
 				/>
 				<meta name="robots" content="index, follow" />
 
@@ -67,19 +67,13 @@ export default function RootLayout({
 					content="Découvrez mon portfolio en tant que développeur web. Explorez mes projets et compétences en développement frontend et backend."
 				/>
 				<meta property="og:type" content="website" />
-				<meta property="og:url" content="https://votre-site.com" />
-				<meta property="og:image" content="https://votre-site.com/images/preview.png" />
+				<meta property="og:url" content="https://tchessi-pre.dev" />
+				<meta property="og:image" content="https://tchessi-pre.dev/images/preview.png" />
 				<meta property="og:image:width" content="1200" />
 				<meta property="og:image:height" content="630" />
 				<meta property="og:site_name" content="Portfolio de Tchèssi" />
 				<meta property="og:locale" content="fr_FR" />
 				<meta property="og:updated_time" content="2025-02-01T00:00:00+00:00" />
-				<meta name="twitter:title" content="Portfolio de Tchèssi" />
-				<meta
-					name="twitter:description"
-					content="Découvrez mon portfolio en tant que développeur web. Explorez mes projets et compétences en développement frontend et backend."
-				/>
-				{/* Favicon */}
 				<link rel="icon" href="/favicon.ico" />
 			</head>
 
