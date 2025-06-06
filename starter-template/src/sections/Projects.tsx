@@ -6,6 +6,7 @@ import LeChaudronLandingPage from '@/assets/images/lechaudronafricain.png';
 import ReserviaLandingPage from '@/assets/images/reservia.png';
 import OhmyfooLandingPage from '@/assets/images/Omyfood.png';
 import LaChouetteAgenceLandingPage from '@/assets/images/lachouetteagence.png';
+import BingPhotoLandingPage from '@/assets/images/bingphoto.png';
 import BlogLandingPage from '@/assets/images/blog.png';
 import CheckCircleIcon from '@/assets/icons/check-circle.svg';
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
@@ -14,6 +15,18 @@ import { Card } from '@/components/Card';
 import { useTranslations } from 'next-intl';
 
 const portfolioProjects = [
+	{
+		company: 'Bing Photo',
+		year: '2025',
+		title: 'Nextjs, Tailwindcss, Go, Microservices, S3',
+		results: [
+			{ title: 'enhancedUserExperience', value: 95 },
+			{ title: 'improvedSiteSpeed', value: 70 },
+			{ title: 'increasedMobileTraffic', value: 80 },
+		],
+		link: 'https://github.com/tchessi-pre/bing-photo-front',
+		image: BingPhotoLandingPage,
+	},
 	{
 		company: 'Le Chaudron Africain',
 		year: '2024',
@@ -99,12 +112,12 @@ export const ProjectsSection = () => {
 						>
 							<div className='lg:grid lg:grid-cols-2 lg:gap-16'>
 								<div className='lg:pb-16'>
-									<div className='bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text'>
+									<div className='bg-gradient-to-r from-orange-500 to-white inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text'>
 										<span>{project.company}</span>
 										<span>&bull;</span>
 										<span>{project.year}</span>
 									</div>
-									<h3 className='font-serif text-2xl md:mt-5 md:text-4xl mt-2'>
+									<h3 className='font-serif text-2xl md:mt-5 md:text-4xl mt-2 text-white'>
 										{project.title}
 									</h3>
 									<hr className='border-t-2 border-white/5 mt-4 md:mt-5' />
@@ -112,7 +125,7 @@ export const ProjectsSection = () => {
 										{project.results.map((result) => (
 											<li
 												key={result.title}
-												className='flex gap-2 text-sm md:text-base text-white/50'
+												className='flex gap-2 text-sm md:text-base text-white/80'
 											>
 												<CheckCircleIcon className='size-5 md:size-6' />
 												<span>

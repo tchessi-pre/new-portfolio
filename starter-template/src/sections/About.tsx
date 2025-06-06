@@ -279,18 +279,19 @@ export const AboutSection = () => {
 
 							{/* Navigation Buttons */}
 							<button
-	onClick={goToPrevious}
-	className='absolute left-4 top-1/2 transform -translate-y-1/2 text-white rounded-full p-2 transition duration-300 ease-in-out hover:scale-110 hover:text-gray-900' aria-label='Previous Image'
->
-	<LeftArrowIcon className='w-10 h-10 fill-current' />
-</button>
-<button
-	onClick={goToNext}
-	className='absolute right-4 top-1/2 transform -translate-y-1/2 text-white rounded-full p-2 transition duration-300 ease-in-out hover:scale-110 hover:text-gray-900' aria-label='Next Image'
->
-	<RightArrowIcon className='w-10 h-10 fill-current' />
-</button>
-
+								onClick={goToPrevious}
+								className='absolute left-4 top-1/2 transform -translate-y-1/2 text-white rounded-full p-2 transition duration-300 ease-in-out hover:scale-110 hover:text-gray-900'
+								aria-label='Previous Image'
+							>
+								<LeftArrowIcon className='w-10 h-10 fill-current' />
+							</button>
+							<button
+								onClick={goToNext}
+								className='absolute right-4 top-1/2 transform -translate-y-1/2 text-white rounded-full p-2 transition duration-300 ease-in-out hover:scale-110 hover:text-gray-900'
+								aria-label='Next Image'
+							>
+								<RightArrowIcon className='w-10 h-10 fill-current' />
+							</button>
 						</Card>
 						<Card className='h-[320px] md:col-span-3 lg:col-span-2'>
 							<CardHeader
@@ -321,7 +322,7 @@ export const AboutSection = () => {
 								{hobbies.map((hobby) => (
 									<motion.div
 										key={hobby.title}
-										className='inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 absolute'
+										className='inline-flex items-center gap-2 px-6 bg-gradient-to-r from-orange-300 to-sky-400 rounded-full py-1.5 absolute'
 										style={{
 											left: hobby.left,
 											top: hobby.top,
@@ -337,8 +338,8 @@ export const AboutSection = () => {
 								))}
 							</div>
 						</Card>
-						<Card className='h-[320px] p-0 relative md:col-span-2 lg:col-span-1'>
-							<div className='relative h-full w-full'>
+						<Card className='h-[320px] p-0 relative md:col-span-2 lg:col-span-1 border-sky-700 border-2 dark:border-gray-400' >
+							<div className='relative h-full w-full '>
 								<iframe
 									src='https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d46446.65495417451!2d5.3903360000000005!3d43.3160192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1729360245919!5m2!1sfr!2sfr'
 									width='600'
@@ -350,13 +351,13 @@ export const AboutSection = () => {
 									title='Carte interactive de Marseille'
 								></iframe>
 							</div>
-							<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full  after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
-								<div className='absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-20 animate-ping [animation-duration:2s]'></div>
-								<div className='absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-10 '></div>
+							<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full  after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/10">
+								<div className='absolute inset-0 rounded-full bg-gradient-to-r from-orange-500 to-sky-600 -z-20 animate-ping [animation-duration:2s]'></div>
+								{/* <div className='absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-10 '></div> */}
 								<Image
 									src={smileMemoji}
 									alt='smiling memoji'
-									className='size-20'
+									className='size-30 rounded-full'
 								/>
 							</div>
 						</Card>

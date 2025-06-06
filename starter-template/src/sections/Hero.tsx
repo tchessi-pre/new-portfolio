@@ -18,14 +18,14 @@ export const HeroSection = () => {
 			id='home'
 		>
 			<div className='absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]'>
-				<div
+				{/* <div
 					className='absolute inset-0 -z-30 opacity-5'
 					style={{ backgroundImage: `url(${grainImage.src})` }}
-				></div>
+				></div> */}
 				<div className='size-[620px] hero-ring'></div>
-				<div className='size-[820px] hero-ring'></div>
-				<div className='size-[1020px] hero-ring'></div>
-				<div className='size-[1220px] hero-ring'></div>
+				{/* <div className='size-[820px] hero-ring'></div> */}
+				{/* <div className='size-[1020px] hero-ring'></div>
+				<div className='size-[1220px] hero-ring'></div> */}
 				<HeroOrbit
 					size={430}
 					rotation={-14}
@@ -34,7 +34,7 @@ export const HeroSection = () => {
 					shouldSpin
 					spinDuration='3s'
 				>
-					<SparkleIcon className='size-8 text-emerald-300/20' />
+					<SparkleIcon className='size-8 text-orange-500/20 dark:text-orange-300/20' />
 				</HeroOrbit>
 				<HeroOrbit
 					size={440}
@@ -44,10 +44,10 @@ export const HeroSection = () => {
 					shouldSpin
 					spinDuration='3s'
 				>
-					<SparkleIcon className='size-5 text-emerald-300/20' />
+					<SparkleIcon className='size-5 text-orange-500/20 dark:text-orange-300/20' />
 				</HeroOrbit>
 				<HeroOrbit size={520} rotation={-41} shouldOrbit orbitDuration='34s'>
-					<div className='size-2 rounded-full bg-emerald-300/20' />
+					<div className='size-2 rounded-full bg-orange-500/20 dark:bg-orange-300/20' />
 				</HeroOrbit>
 				<HeroOrbit
 					size={530}
@@ -57,7 +57,7 @@ export const HeroSection = () => {
 					shouldSpin
 					spinDuration='3s'
 				>
-					<SparkleIcon className='size-10 text-emerald-300/20' />
+					<SparkleIcon className='size-10 text-orange-500/20 dark:text-orange-300/20' />
 				</HeroOrbit>
 				<HeroOrbit
 					size={550}
@@ -67,7 +67,7 @@ export const HeroSection = () => {
 					shouldSpin
 					spinDuration='6s'
 				>
-					<StarIcon className='size-12 text-emerald-300' />
+					<StarIcon className='size-12 text-orange-500/50 dark:text-orange-300' />
 				</HeroOrbit>
 				<HeroOrbit
 					size={590}
@@ -77,10 +77,10 @@ export const HeroSection = () => {
 					shouldSpin
 					spinDuration='6s'
 				>
-					<StarIcon className='size-8 text-emerald-300' />
+					<StarIcon className='size-8 text-orange-500/20 dark:text-orange-300' />
 				</HeroOrbit>
 				<HeroOrbit size={650} rotation={-5} shouldOrbit orbitDuration='42s'>
-					<div className='size-2 rounded-full bg-emerald-300/20' />
+					<div className='size-2 rounded-full bg-orange-500/50 dark:bg-orange-300/20' />
 				</HeroOrbit>
 				<HeroOrbit
 					size={710}
@@ -90,12 +90,12 @@ export const HeroSection = () => {
 					shouldSpin
 					spinDuration='3s'
 				>
-					<SparkleIcon className='size-14 text-emerald-300/20' />
+					<SparkleIcon className='size-14 text-orange-500/20 dark:text-orange-300/20' />
 				</HeroOrbit>
 				<HeroOrbit size={720} rotation={85} shouldOrbit orbitDuration='46s'>
-					<div className='size-3 rounded-full bg-emerald-300/20' />
+					<div className='size-3 rounded-full bg-orange-500/20 dark:bg-orange-300/20' />
 				</HeroOrbit>
-				<HeroOrbit
+				{/* <HeroOrbit
 					size={800}
 					rotation={-72}
 					shouldOrbit
@@ -103,58 +103,62 @@ export const HeroSection = () => {
 					shouldSpin
 					spinDuration='6s'
 				>
-					<StarIcon className='size-28 text-emerald-300' />
-				</HeroOrbit>
+					<StarIcon className='size-28 text-orange-300' />
+				</HeroOrbit> */}
 			</div>
 			<div className='container'>
 				<div className='flex flex-col items-center '>
 					<Image
 						src={memojiImage}
 						className='size-[100px]'
-						alt='Person peeking from behind laptop'
+						alt='Person photo'
 					/>
 					<div className='bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg'>
 						<div className='bg-green-500 size-2.5 rounded-full relative'>
 							<div className='bg-green-500 absolute inset-0 rounded-full animate-ping-large'></div>
 						</div>
-						<div className='text-sm font-semi'>{t('availableForProjects')}</div>
+						<div className='text-sm font-semi text-white dark:text-white/80 font-medium'>{t('availableForProjects')}</div>
 					</div>
 				</div>
 				<div className='max-w-lg mx-auto'>
-					<h1 className='font-serif text-3xl md:text-4xl text-center mt-8 tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text'>
+					<h1 className='font-serif text-3xl md:text-4xl text-center mt-8 tracking-widest bg-gradient-to-r from-orange-500 to-sky-500 text-transparent bg-clip-text'>
 						{t('title').split('Tchèssi')[0]}
-						<span className='text-white/80 font-bold inline-block animate-fade-in'>
+						<span className='text-gray-800 dark:text-white/80 font-bold inline-block animate-fade-in'>
 							Tchèssi
 						</span>
 						{t('title').split('Tchèssi')[1]}
 					</h1>
 
-					<p className='mt-4 text-center text-white/60 md:text-lg'>
+					<p className='mt-4 text-center text-gray-800 md:text-lg dark:text-white'>
 						{t('subtitle')}
 					</p>
 				</div>
-				<div className='flex flex-col md:flex-row justify-center items-center mt-8 gap-4'>
+				<div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
+					{/* Bouton Explore Work */}
 					<button
 						onClick={() =>
 							window.open('https://github.com/tchessi-pre', '_blank')
 						}
-						className='relative inline-flex items-center gap-2 border border-white/50 px-6 h-12 rounded-xl transition-all duration-300 hover:border-white hover:bg-white/10 active:bg-white/20 animate-pulse'
+						className="relative inline-flex items-center gap-2 border-2 border-gray-700 dark:border-white/50 px-6 h-12 rounded-xl transition-all duration-300 hover:border-white hover:bg-white/10 active:bg-white/20 hover:shadow-lg"
 					>
-						<span className='font-semibold'>{t('exploreWork')}</span>
-						<ArrowDown className='size-4 transition-transform duration-500 ease-in-out hover:translate-y-1' />
+						<span className="font-semibold">{t('exploreWork')}</span>
+						<ArrowDown className="w-4 h-4 transition-transform duration-500 ease-in-out group-hover:translate-y-1" />
 					</button>
+
+					{/* Bouton Let's Connect */}
 					<button
 						onClick={() =>
 							document
 								.getElementById('contact')
 								?.scrollIntoView({ behavior: 'smooth' })
 						}
-						className='inline-flex items-center relative gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl transition-all duration-300 hover:bg-gray-200 hover:border-gray-300 hover:text-gray-800 hover:shadow-lg'
+						className="inline-flex items-center relative gap-2 border text-white border-gray-700/50 bg-gray-800 dark:bg-white  dark:text-gray-800 h-12 px-6 rounded-xl transition-all duration-300 hover:bg-gray-200 hover:border-gray-300 hover:text-gray-800 hover:shadow-lg"
 					>
 						<span>✌️</span>
-						<span className='font-semibold'>{t('letsConnect')}</span>
+						<span className="font-semibold">{t('letsConnect')}</span>
 					</button>
 				</div>
+
 			</div>
 		</div>
 	);

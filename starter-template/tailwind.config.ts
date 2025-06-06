@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
+	darkMode: 'class', 
 	content: [
 		'./src/pages/**/*.{js,ts,jsx,tsx,mdx}',
 		'./src/sections/**/*.{js,ts,jsx,tsx,mdx}',
@@ -86,6 +87,12 @@ const config: Config = {
 					900: '#1a1a1a',
 					700: '#2d2d2d',
 				},
+				skyae: {
+					700: '#2b627b',
+					800: '#294f61',
+					900: '#264353',
+					950: '#142b38',
+				}
 			},
 		},
 	},

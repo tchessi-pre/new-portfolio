@@ -1,27 +1,37 @@
-// ThemeSwitcher.tsx
 'use client';
 
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
+import { Moon, Sun } from 'lucide-react';
 
 export const ThemeSwitcher = () => {
-	const { theme, setTheme } = useTheme();
-	const [mounted, setMounted] = useState(false);
+  const { theme, setTheme, systemTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
-	// S'assurer que le composant est monté pour éviter les problèmes d'hydratation
-	useEffect(() => {
-		setMounted(true);
-	}, []);
+  // Ensure component is mounted to avoid hydration issues
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
-	if (!mounted) return null;
+  // Handle initial theme setup
+  useEffect(() => {
+    if (mounted) {
+      const currentTheme = theme === 'system' ? systemTheme : theme;
+      document.documentElement.classList.toggle('dark', currentTheme === 'dark');
+    }
+  }, [mounted, theme, systemTheme]);
 
-	return (
-		<button
-			onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-			className='p-2 rounded-full text-white transition-colors duration-200 hover:bg-white hover:text-gray-900 border border-white/15'
-			aria-label='Toggle theme'
-		>
-			{theme === 'light' ? '🌙' : '☀️'}
-		</button>
-	);
+  if (!mounted) return null;
+
+  const currentTheme = theme === 'system' ? systemTheme : theme;
+
+  return (
+    <button
+      onClick={() => setTheme(currentTheme === 'light' ? 'dark' : 'light')}
+      className="p-2 rounded-full transition-colors duration-300 hover:bg-orange-500/10 dark:hover:bg-sky-500/10 hover:text-orange-500 dark:hover:text-sky-500 border-2 border-orange-500/20 dark:border-sky-500/20 text-gray-900 dark:text-white"
+      aria-label="Toggle theme"
+    >
+      {currentTheme === 'light' ? <Moon size={24} /> : <Sun size={24} />}
+    </button>
+  );
 };

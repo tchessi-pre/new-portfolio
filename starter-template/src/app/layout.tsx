@@ -6,9 +6,11 @@ import { twMerge } from 'tailwind-merge';
 import { NextIntlClientProvider } from 'next-intl';
 import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
+import { ThemeProvider } from '@/components/theme-provider';
 
 const NoSSR = dynamic(() => import('../components/NoSSR'), { ssr: false });
 
+// Configuration des polices Google
 const inter = Inter({
 	subsets: ['latin'],
 	variable: '--font-sans',
@@ -28,78 +30,71 @@ export default function RootLayout({
 	const [locale, setLocale] = useState('en');
 
 	useEffect(() => {
-		const storedLanguage = localStorage.getItem('language');
-		if (storedLanguage) {
-			setLocale(storedLanguage);
-		}
+		// Récupération de la langue stockée dans le localStorage, sinon garde 'en'
+		const storedLanguage = localStorage.getItem('language') || 'en';
+		setLocale(storedLanguage);
 
-		// Ajouter les classes de police sur le client
+		// Ajout des classes de police sur l'élément <html>
 		document.documentElement.classList.add(inter.variable, calistoga.variable);
 	}, []);
 
-	// Charger les fichiers de traduction en fonction de la langue
+	// Chargement dynamique du fichier de traduction selon la langue
 	const messages = require(`../../messages/${locale}.json`);
 
 	return (
-		<html lang={locale}>
+		<html lang={locale} suppressHydrationWarning className="dark:bg-gray-950">
 			<head>
-				<meta charSet='UTF-8' />
-				<meta httpEquiv='X-UA-Compatible' content='IE=edge' />
-				<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+				<meta charSet="UTF-8" />
+				<meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 				<title>Portfolio de Tchèssi</title>
 				<meta
-					name='description'
-					content='Découvrez mon portfolio en tant que développeur web. Explorez mes projets et compétences en développement frontend et backend.'
+					name="description"
+					content="Découvrez mon portfolio en tant que développeur web. Explorez mes projets et compétences en développement frontend et backend."
 				/>
-				<meta name='author' content='Tchèssi PRE' />
+				<meta name="author" content="Tchèssi PRE" />
 				<meta
-					name='keywords'
-					content='développement web, frontend, backend, React, Next.js, JavaScript, TypeScript, portfolio'
+					name="keywords"
+					content="développement web, frontend, backend, React, Next.js, JavaScript, TypeScript, portfolio"
 				/>
-				<meta name='robots' content='index, follow' />
+				<meta name="robots" content="index, follow" />
 
-				{/* Open Graph (Facebook & LinkedIn) */}
-				<meta property='og:title' content='Portfolio de Tchèssi' />
+				{/* Open Graph */}
+				<meta property="og:title" content="Portfolio de Tchèssi" />
 				<meta
-					property='og:description'
-					content='Découvrez mon portfolio en tant que développeur web. Explorez mes projets et compétences en développement frontend et backend.'
+					property="og:description"
+					content="Découvrez mon portfolio en tant que développeur web. Explorez mes projets et compétences en développement frontend et backend."
 				/>
-				<meta property='og:type' content='website' />
-				<meta property='og:url' content='https://votre-site.com' />
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content="https://votre-site.com" />
+				<meta property="og:image" content="https://votre-site.com/images/preview.png" />
+				<meta property="og:image:width" content="1200" />
+				<meta property="og:image:height" content="630" />
+				<meta property="og:site_name" content="Portfolio de Tchèssi" />
+				<meta property="og:locale" content="fr_FR" />
+				<meta property="og:updated_time" content="2025-02-01T00:00:00+00:00" />
+				<meta name="twitter:title" content="Portfolio de Tchèssi" />
 				<meta
-					property='og:image'
-					content='https://votre-site.com/images/preview.png'
+					name="twitter:description"
+					content="Découvrez mon portfolio en tant que développeur web. Explorez mes projets et compétences en développement frontend et backend."
 				/>
-				<meta property='og:image:width' content='1200' />
-				<meta property='og:image:height' content='630' />
-				<meta property='og:site_name' content='Portfolio de Tchèssi' />
-
-				{/* LinkedIn Specific Meta Tags */}
-				<meta property='og:locale' content='fr_FR' />
-				<meta property='og:updated_time' content='2025-02-01T00:00:00+00:00' />
-
-				{/* Twitter Card */}
-				<meta name='twitter:card' content='summary_large_image' />
-				<meta name='twitter:title' content='Portfolio de Tchèssi' />
-				<meta
-					name='twitter:description'
-					content='Découvrez mon portfolio en tant que développeur web. Explorez mes projets et compétences en développement frontend et backend.'
-				/>
-				<meta
-					name='twitter:image'
-					content='https://votre-site.com/images/preview.png'
-				/>
-				<meta name='twitter:creator' content='@votre_twitter' />
-
 				{/* Favicon */}
-				<link rel='icon' href='/favicon.ico' />
+				<link rel="icon" href="/favicon.ico" />
 			</head>
 
-			<body className={twMerge('bg-gray-900 text-white antialiased font-sans')}>
+			<body className={twMerge('min-h-screen bg-gradient-to-br from-orange-100 via-amber-50 to-yellow-50 dark:bg-gradient-to-br dark:from-gray-900 dark:via-gray-800 dark:to-gray-950 antialiased font-sans')}>
 				<NoSSR>
 					<NextIntlClientProvider locale={locale} messages={messages}>
-						{children}
+						<ThemeProvider
+							attribute="class"
+							defaultTheme="dark"
+							enableSystem
+							disableTransitionOnChange
+							storageKey="portfolio-theme"
+						>
+							{children}
+						</ThemeProvider>
 					</NextIntlClientProvider>
 				</NoSSR>
 			</body>

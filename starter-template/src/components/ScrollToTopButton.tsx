@@ -1,11 +1,12 @@
 'use client';
 
+import { ChevronsUp } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 export const ScrollToTopButton = () => {
 	const [isVisible, setIsVisible] = useState(false);
 
-	// Montrer le bouton quand l'utilisateur a fait défiler 300 pixels vers le bas
+	// Show button when user has scrolled down 300 pixels
 	const toggleVisibility = () => {
 		if (window.scrollY > 300) {
 			setIsVisible(true);
@@ -14,7 +15,7 @@ export const ScrollToTopButton = () => {
 		}
 	};
 
-	// Faire défiler la page vers le haut
+	// Scroll page to top
 	const scrollToTop = () => {
 		window.scrollTo({
 			top: 0,
@@ -38,18 +39,20 @@ export const ScrollToTopButton = () => {
         w-12 h-12
         flex items-center justify-center
         rounded-full
-        text-white
         transition-all duration-300 ease-in-out
-        bg-gradient-to-r from-emerald-500 to-emerald-700
+        bg-gradient-to-r from-orange-500 to-orange-600 dark:from-sky-500 dark:to-sky-700
+        text-white
         shadow-lg
         backdrop-blur-md
-        hover:scale-105 hover:shadow-xl hover:from-emerald-400 hover:to-emerald-600
+        hover:scale-105 hover:shadow-xl
+        hover:from-orange-400 hover:to-orange-600
+        dark:hover:from-sky-400 dark:hover:to-sky-600
         ${isVisible ? 'opacity-100' : 'opacity-0'}
         transform transition-opacity
       `}
 			aria-label='Scroll to top'
 		>
-			<span className='text-2xl font-semibold'>↑</span>
+			<span className='text-2xl font-semibold'><ChevronsUp /></span>
 		</button>
 	);
 };
