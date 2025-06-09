@@ -4,6 +4,7 @@ import { useState, FormEvent, ChangeEvent } from 'react';
 import emailjs from 'emailjs-com';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useTranslations } from 'next-intl';
 
 interface FormData {
   name: string;
@@ -13,6 +14,7 @@ interface FormData {
 }
 
 export const ContactForm = () => {
+  const t = useTranslations('contactForm');
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
@@ -44,12 +46,13 @@ export const ContactForm = () => {
     };
 
     emailjs.send(serviceID, templateID, templateParams, userID)
-      .then((result) => {
-        toast.success('Message envoyé avec succès !');
+      .then(() => {
+        toast.success(t('success'));
         setFormData({ name: '', email: '', subject: '', message: '' });
         setIsSubmitting(false);
-      }, (error) => {
-        toast.error("Une erreur s'est produite lors de l'envoi du message.");
+      })
+      .catch((error) => {
+        toast.error(t('error'));
         console.error(error);
         setIsSubmitting(false);
       });
@@ -64,20 +67,20 @@ export const ContactForm = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           <div>
             <label htmlFor="name" className="block text-sm font-medium mb-2">
-              Nom
+              {t('name')}
             </label>
             <input
               type="text"
               id="name"
               value={formData.name}
               onChange={handleInputChange}
-              className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring--500 focus:border-transparent"
+              className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-transparent"
               required
             />
           </div>
           <div>
             <label htmlFor="email" className="block text-sm font-medium mb-2">
-              Email
+              {t('email')}
             </label>
             <input
               type="email"
@@ -91,7 +94,7 @@ export const ContactForm = () => {
         </div>
         <div className="mb-6">
           <label htmlFor="subject" className="block text-sm font-medium mb-2">
-            Sujet
+            {t('subject')}
           </label>
           <input
             type="text"
@@ -104,7 +107,7 @@ export const ContactForm = () => {
         </div>
         <div className="mb-6">
           <label htmlFor="message" className="block text-sm font-medium mb-2">
-            Message
+            {t('message')}
           </label>
           <textarea
             id="message"
@@ -123,7 +126,7 @@ export const ContactForm = () => {
               : 'bg-gray-900 text-white hover:bg-gray-700'
             }`}
         >
-          {isSubmitting ? 'Envoi en cours...' : 'Envoyer'}
+          {isSubmitting ? t('sending') : t('send')}
         </button>
       </form>
       <ToastContainer position="top-right" autoClose={5000} />

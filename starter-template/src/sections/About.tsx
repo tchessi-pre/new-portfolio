@@ -3,8 +3,6 @@
 import { useState } from 'react';
 import { Card } from '@/components/Card';
 import { SectionHeader } from '@/components/SectionHeader';
-import bookImage from '@/assets/images/book-cover.png';
-import habitImage from '@/assets/images/habit.webp';
 import Image from 'next/image';
 import smileMemoji from '@/assets/images/memoji-smile.png';
 import JavascriptIcon from '@/assets/icons/square-js.svg';

@@ -117,5 +117,15 @@
 	"loader": {
 		"loading": "Chargement...",
 		"introduction": "Je suis Tchèssi, jeune diplômé en ingénierie web"
+	},
+	"contactForm": {
+		"name": "Nom",
+		"email": "Email",
+		"subject": "Sujet",
+		"message": "Message",
+		"send": "Envoyer",
+		"sending": "Envoi en cours...",
+		"success": "Message envoyé avec succès !",
+		"error": "Une erreur s'est produite lors de l'envoi du message."
 	}
 }
