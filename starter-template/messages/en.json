@@ -6,11 +6,11 @@
 		"contact": "Contact"
 	},
 	"hero": {
-		"title": "Hi, I'm Tchèssi. Aspiring Web Engineer.",
-		"subtitle": "A recent graduate in web engineering, passionate about building high-performing and user-friendly applications.",
-		"availableForProjects": "Available for new projects",
-		"exploreWork": "Explore My Github",
-		"letsConnect": "Let's Connect"
+		"title": "Hi, I'm Tchèssi Junior Web Software Engineer.",
+		"subtitle": "I'm a recent web engineering graduate, passionate about building fast, user-friendly, and high-quality web applications.",
+		"availableForProjects": "Open to new opportunities",
+		"exploreWork": "Check Out My GitHub",
+		"letsConnect": "Get in Touch"
 	},
 	"projects": {
 		"sectionHeader": {
@@ -74,6 +74,8 @@
 	"eyebrow": "Contact Me",
 	"title": "Let's Build Together",
 	"heading": "Ready to Contribute to Your Company",
+	"phoneNumber": "Phone:",
+	"email": "Email",
 	"description": "I’m eager to bring my skills to an ambitious and innovative company. Let’s discuss how I can help support your projects and goals.",
 	"buttonText": "Visit My LinkedIn",
 	"personalStatement": "Driven by innovation and efficiency, I bring a dynamic and creative perspective to enhance your company’s success."

@@ -37,7 +37,7 @@ import LeftArrowIcon from '@/assets/icons/alt-arrow-left-svgrepo-com.svg';
 import RightArrowIcon from '@/assets/icons/alt-arrow-right-svgrepo-com.svg';
 
 import { ToolboxItems } from '@/components/ToolboxItems';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useRef } from 'react';
 import { useTranslations } from 'next-intl';
 
@@ -45,8 +45,7 @@ const images = [
 	{ src: '/napoleonhill.png', alt: 'Book Cover' },
 	{ src: '/habit.webp', alt: 'Habit Image' },
 	{ src: '/7-habit.png', alt: 'Habit Image' },
-	// Ajoutez d'autres images ici si nécessaire
-	// Ajoutez d'autres images ici si nécessaire
+	{ src: '/tolteques.jpg', alt: 'Habit Image' },
 ];
 
 const toolboxItems = [
@@ -258,25 +257,25 @@ export const AboutSection = () => {
 								title={t('myReadsTitle')}
 								description={t('myReadsDescription')}
 							/>
-
 							{/* Image with framer-motion for smooth transitions */}
-							<motion.div
-								key={currentIndex}
-								custom={direction}
-								initial={{ opacity: 0, x: direction === 1 ? 100 : -100 }}
-								animate={{ opacity: 1, x: 0 }}
-								exit={{ opacity: 0, x: direction === 1 ? -100 : 100 }}
-								transition={{ duration: 1 }}
-								className='w-40 mx-auto mt-2 md:mt-0'
-							>
-								<Image
-									src={images[currentIndex].src}
-									alt={images[currentIndex].alt}
-									width={width}
-									height={height}
-								/>
-							</motion.div>
-
+							<AnimatePresence mode="wait">
+								<motion.div
+									key={currentIndex}
+									custom={direction}
+									initial={{ opacity: 0, x: direction === 1 ? 100 : -100 }}
+									animate={{ opacity: 1, x: 0 }}
+									exit={{ opacity: 0, x: direction === 1 ? -100 : 100 }}
+									transition={{ duration: 0.6, ease: 'easeInOut' }}
+									className='w-40 mx-auto mt-2 md:mt-0'
+								>
+									<Image
+										src={images[currentIndex].src}
+										alt={images[currentIndex].alt}
+										width={width}
+										height={height}
+									/>
+								</motion.div>
+							</AnimatePresence>
 							{/* Navigation Buttons */}
 							<button
 								onClick={goToPrevious}

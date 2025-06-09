@@ -32,9 +32,9 @@ export const ContactForm = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    const serviceID = 'service_469cjcu';
-    const templateID = 'template_b3079zb';
-    const userID = 'i221w0W6lvk4ZAAeR'; // ou PUBLIC_KEY
+    const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
+    const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
+    const userID = process.env.NEXT_PUBLIC_EMAILJS_USER_ID!;
 
     const templateParams = {
       from_name: formData.name,

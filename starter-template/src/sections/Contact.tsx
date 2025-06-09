@@ -11,7 +11,7 @@ import { ContactForm } from '@/components/ContactForm';
 export const ContactSection = () => {
 	const t = useTranslations('contact');
 
-	const email = 'tchessi.pre@laplateforme.io';
+	const email = 'tchessipre@gmail.com';
 	const phone = '06.87.31.45.70';
 
 
@@ -55,7 +55,7 @@ export const ContactSection = () => {
 							<address className='mt-4 not-italic text-center md:text-left'>
 								<p className='text-sm md:text-base flex items-center gap-2'>
 									<EmailIcon className='w-4 h-4' />
-									<strong>Email:</strong>{' '}
+									<strong>{t('email')}</strong>{' '}
 									<a
 										href={`mailto:${email}`}
 										className='underline hover:text-gray-700 transition-colors duration-200'
@@ -65,7 +65,7 @@ export const ContactSection = () => {
 								</p>
 								<p className='text-sm md:text-base mt-2 flex items-center gap-2'>
 									<PhoneIcon className='w-4 h-4' />
-									<strong>Téléphone:</strong>{' '}
+									<strong>{t('phoneNumber')}</strong>{' '}
 									<a
 										href={`tel:${phone}`}
 										className='underline hover:text-gray-700 transition-colors duration-200'

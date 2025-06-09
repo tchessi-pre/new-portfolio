@@ -6,11 +6,11 @@
 		"contact": "Contact"
 	},
 	"hero": {
-		"title": "Bonjour, je suis Tchèssi, Ingénieur Web Junior.",
-		"subtitle": "Jeune diplômé en ingénierie web, passionné par la création d'applications performantes et conviviales.",
-		"availableForProjects": "Disponible pour de nouveaux projets",
+		"title": "Bonjour, je suis Tchèssi Ingénieur Logiciel Web Junior.",
+		"subtitle": "Je suis diplômé en ingénierie web, passionné par la création d’applications web rapides, intuitives et de haute qualité.",
+		"availableForProjects": "Ouvert aux nouvelles opportunités",
 		"exploreWork": "Voir mon Github",
-		"letsConnect": "Entrons en contact"
+		"letsConnect": "Me contacter"
 	},
 	"projects": {
 		"sectionHeader": {
@@ -74,6 +74,8 @@
 		"eyebrow": "Me Contacter",
 		"title": "Construisons Ensemble",
 		"heading": "Prêt à Contribuer à Votre Entreprise",
+		"phoneNumber": "Téléphone",
+		"email": "Email:",
 		"description": "Je souhaite mettre mes compétences au service d'une entreprise ambitieuse et innovante. Discutons de la manière dont je peux contribuer à vos projets et objectifs.",
 		"buttonText": "Visitez mon LinkedIn",
 		"personalStatement": "Animé par l'innovation et l'efficacité, j'apporte une perspective dynamique et créative pour renforcer le succès de votre entreprise."
