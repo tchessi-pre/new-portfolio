@@ -6,7 +6,7 @@ export const Card = ({ className, children, ...other }: ComponentPropsWithoutRef
 	return (
 		<div
 			className={twMerge(
-				"bg-gradient-to-br from-sky-900 to-sky-950 dark:from-sky-950 dark:to-sky-900",
+				"bg-gradient-to-r from-gray-700 to-sky-400 dark:from-gray-700 dark:to-sky-400",
 				"rounded-3xl relative z-0 overflow-hidden",
 				"after:z-10 after:content-[''] after:absolute after:inset-0",
 				"after:outline-2 after:outline after:-outline-offset-2",
