@@ -18,6 +18,7 @@ export const Footer = () => {
 		{
 			title: t('cvLink'),
 			href: '/CV_2025-06-07_Tchèssi_PRE.pdf',
+			download: true,
 		},
 	];
 
@@ -32,17 +33,13 @@ export const Footer = () => {
 							<a
 								key={link.title}
 								href={link.href}
-								target={link.href.startsWith('http') ? '_blank' : '_self'}
-								rel={
-									link.href.startsWith('http')
-										? 'noopener noreferrer'
-										: undefined
-								}
+								target='_blank'
+								rel='noopener noreferrer'
+								download={link.download || undefined}
 								className='relative inline-flex items-center gap-1.5 text-gray-700 dark:text-white hover:text-gray-500 transition-colors duration-200'
 							>
-								<span className=' '>{link.title}</span>
+								<span>{link.title}</span>
 								<ArrowUpRightIcon className='size-4' />
-								{/* Surlignement sous le lien avec animation */}
 								<span className='absolute left-2 bottom-2 w-full h-0.5 bg-emerald-300 transform scale-x-0 transition-transform duration-300 ease-out origin-left hover:scale-x-100'></span>
 							</a>
 						))}

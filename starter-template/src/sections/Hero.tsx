@@ -129,7 +129,7 @@ export const HeroSection = () => {
 						{t('title').split('Tchèssi')[1]}
 					</h1>
 
-					<p className='mt-4 text-center text-gray-800 md:text-lg dark:text-white'>
+					<p className='mt-4 text-center text-gray-900 md:text-lg dark:text-white'>
 						{t('subtitle')}
 					</p>
 				</div>
