@@ -7,7 +7,7 @@ import { Card } from '../components/Card';
 import Image from 'next/image';
 import memojiAvatar1 from '@/assets/images/ana.jpeg';
 import memojiAvatar2 from '@/assets/images/moradprofile.jpg';
-import memojiAvatar3 from '@/assets/images/memoji-avatar-3.png';
+import memojiAvatar3 from '@/assets/images/marcbergeprofil.jpg';
 import memojiAvatar4 from '@/assets/images/memoji-avatar-4.png';
 import memojiAvatar5 from '@/assets/images/memoji-avatar-5.png';
 
@@ -81,13 +81,13 @@ export const TestimonialsSection = () => {
 												/>
 											</div>
 											<div>
-												<div className='font-semibold text-orange-300'>{testimonial.name}</div>
-												<div className='text-sm text-white/80'>
+												<div className='font-bold text-orange-300'>{testimonial.name}</div>
+												<div className='text-sm text-white'>
 													{testimonial.position}
 												</div>
 											</div>
 										</div>
-										<p className='mt-4 md:mt-6 text-sm md:text-base text-white/70 italic'>
+										<p className='mt-4 md:mt-6 text-sm md:text-base text-white/80 italic'>
 											{testimonial.text}
 										</p>
 									</Card>

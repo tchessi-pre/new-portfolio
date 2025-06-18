@@ -90,18 +90,18 @@
 		"description": "Voici ce que mes professeurs et mentors disent de mes compétences et de mes performances pendant mes études.",
 		"testimonial1": {
 			"name": "Ana Stanko",
-			"position": "Directrice des opérations @ L'Atelier",
+			"position": "Directrice des opérations @ L'Atelier de La Plateforme",
 			"text": "Nous avons passé 3 ans ensemble à l’Atelier de La Plateforme . Une personne bienveillante et souriante qui a aucun mal à s’intégrer dans n'importe quel équipe projet . Pendant son alternance à l'Atelier , Tchessi à fait une montée en compétences remarquable , il est très investi dans les projet qu'on lui confie ainsi que dans la vie quotidienne de l’équipe . Nous sommes ravis d'avoir partagé un bout de son chemin professionnel ."
 		},
 		"testimonial2": {
 			"name": "Morad Labrid",
-			"position": "Lead Developer Full Stack @ L'Atelier",
+			"position": "Lead Developer Full Stack @ L'Atelier de La Plateforme",
 			"text": "J’ai eu le plaisir de travailler avec Tchessi pendant son alternance. Sérieux, curieux et impliqué, il s’est rapidement démarqué par ses compétences en front-end, tout en étant à l’aise sur le back. Toujours prêt à apprendre et à aider l’équipe, il a su apporter une vraie valeur à nos projets. Un profil complet, motivé et prometteur que je recommande vivement. Bonne continuation Tchessi !"
 		},
 		"testimonial3": {
-			"name": "David Brown",
-			"position": "Superviseur de projet @ CodeWorks",
-			"text": "Tchèssi a été un membre essentiel de notre équipe pendant son stage. Sa capacité à comprendre rapidement des projets complexes et à contribuer efficacement a été grandement appréciée."
+			"name": "Marc BERGE",
+			"position": "Créateur et coach de MMD Coaching & PerformanceCréateur et coach de MMD Coaching & Performance @ MMD Coaching",
+			"text": "J’ai eu le plaisir d’accompagner Tchèssi en tant que Coach professionnel . Cet accompagnement a été réalisé dans le cadre de coachings proposés par l’organisme de formation en ligne OPENCLASSROOMS dans lequel Tchèssi s’est formé au métier de Développeur Web et a obtenu son diplôme. Durant notre collaboration, Tchèssi a été très motivé et rigoureux dans son parcours, tant sur les projets à réaliser que sur la construction de sa future activité professionnelle."
 		},
 		"testimonial4": {
 			"name": "Emily Clark",
