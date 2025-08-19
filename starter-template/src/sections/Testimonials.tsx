@@ -8,15 +8,13 @@ import Image from 'next/image';
 import memojiAvatar1 from '@/assets/images/ana.jpeg';
 import memojiAvatar2 from '@/assets/images/moradprofile.jpg';
 import memojiAvatar3 from '@/assets/images/marcbergeprofil.jpg';
-import memojiAvatar4 from '@/assets/images/memoji-avatar-4.png';
-import memojiAvatar5 from '@/assets/images/memoji-avatar-5.png';
+import memojiAvatar4 from '@/assets/images/joris.jpeg';
 
 const avatars = [
 	memojiAvatar1,
 	memojiAvatar2,
 	memojiAvatar3,
-	memojiAvatar4,
-	memojiAvatar5,
+	memojiAvatar4
 ];
 
 export const TestimonialsSection = () => {
@@ -46,12 +44,6 @@ export const TestimonialsSection = () => {
 			position: t('testimonial4.position'),
 			text: t('testimonial4.text'),
 			avatar: memojiAvatar4,
-		},
-		{
-			name: t('testimonial5.name'),
-			position: t('testimonial5.position'),
-			text: t('testimonial5.text'),
-			avatar: memojiAvatar5,
 		},
 	];
 
