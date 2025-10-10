@@ -17,7 +17,7 @@ export const Footer = () => {
 		},
 		{
 			title: t('cvLink'),
-			href: '/Tchèssi_PRE_CV_30_09_2025.pdf',
+			href: '/CV_10_2025_Tchèssi_PRE.pdf',
 			download: true,
 		},
 	];
