@@ -1,31 +1,68 @@
-# Single Page Dev Portfolio Resource Bundle
+# Portfolio - Tchèssi Pre
 
-Welcome to the Single Page Dev Portfolio Resource Bundle! This package contains everything you need to create a stunning, interactive portfolio using React, Next.js, TailwindCSS, and Framer Motion.
+Bienvenue sur le dépôt de mon portfolio professionnel. Ce projet est une application web moderne développée pour présenter mes compétences, mes réalisations et mon parcours en tant qu'Ingénieur Web Full Stack.
 
-## Contents
+## 🚀 Technologies utilisées
 
-This bundle includes two main folders:
+Ce portfolio est construit avec une stack technique moderne et performante :
 
-1. `designs/` - Contains all the design files
-2. `starter-template/` - Contains the starter code for your portfolio project
+- **Core** : [Next.js 14](https://nextjs.org/) (App Router), [React 18](https://react.dev/)
+- **Langage** : [TypeScript](https://www.typescriptlang.org/)
+- **Styling** : [Tailwind CSS](https://tailwindcss.com/)
+- **Animations** : [Framer Motion](https://www.framer.com/motion/)
+- **Internationalisation (i18n)** : [next-intl](https://next-intl-docs.vercel.app/) (Support Français 🇫🇷 / Anglais 🇬🇧)
+- **Thématisation** : [next-themes](https://github.com/pacocoursey/next-themes) (Mode Sombre 🌙 / Clair ☀️)
+- **Contact** : [EmailJS](https://www.emailjs.com/)
+- **UI/Icons** : Lucide React, React Toastify
 
-## Getting Started
+## 📂 Structure du projet
 
-1. Open the files in the `designs/` folder to view the responsive designs
-1. Copy the `starter-template/` folder to your desktop
-1. Drop the `starter-template/` folder into your IDE of choice
-1. Run `npm install` to install dependencies
-1. Run `npm run dev` to start the development server
-1. Open `http://localhost:3000` in your browser to get started
+Le code source principal de l'application se trouve dans le dossier `starter-template`.
 
-## Additional Resources
+## 🛠️ Installation et Démarrage
 
-- [Frontend Tribe Youtube Channel](https://www.youtube.com/@frontend-tribe)
+Pour lancer ce projet localement sur votre machine :
 
-## License and Attribution
+1.  **Prérequis**
+    Assurez-vous d'avoir [Node.js](https://nodejs.org/) installé.
 
-This portfolio project was heavily inspired by the wonderful portfolio design [located here](https://www.figma.com/community/file/1297484254996536416/personalfolio-portfolio-template).
+2.  **Accéder au dossier du projet**
 
-This may be used for personal projects but commercial use is prohibited.
+    ```bash
+    cd starter-template
+    ```
 
-Happy coding, and enjoy building your new portfolio!
+3.  **Installer les dépendances**
+
+    ```bash
+    npm install
+    ```
+
+4.  **Lancer le serveur de développement**
+
+    ```bash
+    npm run dev
+    ```
+
+5.  **Accéder à l'application**
+    Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur pour voir le résultat.
+
+## 📜 Scripts disponibles
+
+Dans le dossier `starter-template` :
+
+- `npm run dev` : Lance le serveur de développement.
+- `npm run build` : Compile l'application pour la production.
+- `npm run start` : Lance le serveur de production (après le build).
+- `npm run lint` : Vérifie la qualité du code avec ESLint.
+
+## ✨ Fonctionnalités clés
+
+- **Design Responsive** : Adapté à tous les écrans (Mobile, Tablette, Desktop).
+- **SEO Friendly** : Optimisation des métadonnées et Open Graph.
+- **Multilingue** : Changement de langue fluide sans rechargement complet.
+- **Dark Mode** : Support natif du mode sombre respectant les préférences système.
+
+---
+
+_Développé par Tchèssi Pre - 2025_

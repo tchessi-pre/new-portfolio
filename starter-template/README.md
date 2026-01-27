@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio - Tchèssi Pre
 
-## Getting Started
+Bienvenue sur le dépôt de mon portfolio professionnel. Ce projet est une application web moderne développée pour présenter mes compétences, mes réalisations et mon parcours en tant qu'Ingénieur Web Full Stack.
 
-First, run the development server:
+## 🚀 Technologies utilisées
 
-```bash
-npm run dev --turbo
-# or
-yarn dev --turbo
-# or
-pnpm dev --turbo
-# or
-bun dev --turbo
-```
+Ce portfolio est construit avec une stack technique moderne et performante :
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Core** : [Next.js 14](https://nextjs.org/) (App Router), [React 18](https://react.dev/)
+- **Langage** : [TypeScript](https://www.typescriptlang.org/)
+- **Styling** : [Tailwind CSS](https://tailwindcss.com/)
+- **Animations** : [Framer Motion](https://www.framer.com/motion/)
+- **Internationalisation (i18n)** : [next-intl](https://next-intl-docs.vercel.app/) (Support Français 🇫🇷 / Anglais 🇬🇧)
+- **Thématisation** : [next-themes](https://github.com/pacocoursey/next-themes) (Mode Sombre 🌙 / Clair ☀️)
+- **Contact** : [EmailJS](https://www.emailjs.com/)
+- **UI/Icons** : Lucide React, React Toastify
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Installation et Démarrage
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Pour lancer ce projet localement sur votre machine :
 
-## Learn More
+1.  **Prérequis**
+    Assurez-vous d'avoir [Node.js](https://nodejs.org/) installé.
 
-To learn more about Next.js, take a look at the following resources:
+2.  **Installer les dépendances**
+    ```bash
+    npm install
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3.  **Lancer le serveur de développement**
+    ```bash
+    npm run dev
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+4.  **Accéder à l'application**
+    Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur pour voir le résultat.
 
-## Deploy on Vercel
+## 📜 Scripts disponibles
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `npm run dev` : Lance le serveur de développement.
+- `npm run build` : Compile l'application pour la production.
+- `npm run start` : Lance le serveur de production (après le build).
+- `npm run lint` : Vérifie la qualité du code avec ESLint.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## ✨ Fonctionnalités clés
+
+- **Design Responsive** : Adapté à tous les écrans (Mobile, Tablette, Desktop).
+- **SEO Friendly** : Optimisation des métadonnées et Open Graph.
+- **Multilingue** : Changement de langue fluide sans rechargement complet.
+- **Dark Mode** : Support natif du mode sombre respectant les préférences système.
+
+---
+*Développé par Tchèssi Pre - 2025*
