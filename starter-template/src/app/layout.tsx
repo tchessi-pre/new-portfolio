@@ -48,15 +48,15 @@ export default function RootLayout({
 				<meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 				<meta name="google-site-verification" content="m8BKFNeqy4KvdNyB7Ci7vJdpKySCkpfggNspSHQlfYc" />
-				<title>Tchèssi Pre - Ingénieur web Junior</title>
+				<title>Tchèssi Pre - Ingénieur Web full Stack | TypeScript | react | Node.js</title>
 				<meta
 					name="description"
-					content="Portfolio de Tchèssi, ingénieur web junior spécialisé en développement frontend et backend. Découvrez ses projets, compétences techniques et réalisations professionnelles."
+					content="Portfolio de Tchèssi, Ingénieur Web full Stack | TypeScript | React | Node.js spécialisé en développement frontend et backend. Découvrez ses projets, compétences techniques et réalisations professionnelles."
 				/>
 				<meta name="author" content="Tchèssi PRE" />
 				<meta
 					name="keywords"
-					content="Tchessi Pre, Tchèssi, Ingenieur web , Marseille, développement web, frontend, backend, React, Next.js, JavaScript, TypeScript, portfolio"
+					content="Tchessi Pre, Tchèssi, Ingenieur web , Marseille, développement web, frontend, backend, React, Next.js, JavaScript, TypeScript, portfolio "
 				/>
 				<meta name="robots" content="index, follow" />
 
@@ -68,7 +68,7 @@ export default function RootLayout({
 				/>
 				<meta property="og:type" content="website" />
 				<meta property="og:url" content="https://tchessi-pre.dev" />
-				<meta property="og:image" content="https://tchessi-pre.dev/images/preview.png" />
+				<meta property="og:image" content="https://tchessi-pre.dev/preview.png" />
 				<meta property="og:image:width" content="1200" />
 				<meta property="og:image:height" content="630" />
 				<meta property="og:site_name" content="Portfolio de Tchèssi" />

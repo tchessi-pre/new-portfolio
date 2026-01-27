@@ -7,6 +7,7 @@ import ReserviaLandingPage from '@/assets/images/reservia.png';
 import OhmyfooLandingPage from '@/assets/images/Omyfood.png';
 import LaChouetteAgenceLandingPage from '@/assets/images/lachouetteagence.png';
 import BingPhotoLandingPage from '@/assets/images/bingphoto.png';
+import AlafiaPlusPage from '@/assets/images/alafiaplus.png';
 import BlogLandingPage from '@/assets/images/blog.png';
 import CheckCircleIcon from '@/assets/icons/check-circle.svg';
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
@@ -15,6 +16,18 @@ import { Card } from '@/components/Card';
 import { useTranslations } from 'next-intl';
 
 const portfolioProjects = [
+	{
+		company: 'Alafia Plus',
+		year: '2025',
+		title: 'Vite.js, Tailwindcss, TypeScript, S3, Brevo, Postgresql, Twilio',
+		results: [
+			// { title: 'enhancedUserExperience', value: 95 },
+			// { title: 'improvedSiteSpeed', value: 70 },
+			// { title: 'increasedMobileTraffic', value: 80 },
+		],
+		link: 'https://github.com/tchessi-pre',
+		image: AlafiaPlusPage,
+	},
 	{
 		company: 'Bing Photo',
 		year: '2025',
