@@ -12,7 +12,7 @@ Ce portfolio est construit avec une stack technique moderne et performante :
 - **Animations** : [Framer Motion](https://www.framer.com/motion/)
 - **Internationalisation (i18n)** : [next-intl](https://next-intl-docs.vercel.app/) (Support Français 🇫🇷 / Anglais 🇬🇧)
 - **Thématisation** : [next-themes](https://github.com/pacocoursey/next-themes) (Mode Sombre 🌙 / Clair ☀️)
-- **Contact** : [EmailJS](https://www.emailjs.com/)
+- **Contact** : [BREVO](https://www.brevo.com/)
 - **UI/Icons** : Lucide React, React Toastify
 
 ## 📂 Structure du projet
