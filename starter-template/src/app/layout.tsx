@@ -64,7 +64,7 @@ export default function RootLayout({
 				<meta property="og:title" content="Portfolio de Tchèssi" />
 				<meta
 					property="og:description"
-					content="Découvrez mon portfolio en tant que développeur web. Explorez mes projets et compétences en développement frontend et backend."
+					content="Découvrez mon portfolio en tant que développeur web. Explorez mes projets et compétences en développement frontend et backend. Spécialisé en React, Next.js, JavaScript, TypeScript, Node.js."
 				/>
 				<meta property="og:type" content="website" />
 				<meta property="og:url" content="https://tchessi-pre.dev" />
